@@ -161,10 +161,12 @@ def main():
         faces = np.concatenate((faces, new_fac))
     vertices = np.concatenate((vertices, np.array([[cx, cy, cz, 255, 0, 0, 240, 111]], dtype=vertices.dtype)))
 
+    if not args.debug:
+        write_ply(vertices, faces, os.path.join(output_dir, args.scanID + '_with_eric.ply'), False)
+
     # visualization
     if args.visualize:
-        origin = o3d.io.read_point_cloud(mesh_with_labels_file)
-        eric = o3d.io.read_point_cloud(eric_file)
+        origin = o3d.io.read_point_cloud(os.path.join(output_dir, args.scanID + '_with_eric.ply'))
         n_pts = np.asarray(origin.points)
         for i in range(n_pts.shape[0]):
             n_pts[i] = vertices[i][:3]
@@ -176,11 +178,8 @@ def main():
         selected_object.colors = o3d.utility.Vector3dVector(selected_colors)
         bbox = selected_object.get_axis_aligned_bounding_box()
         bbox.color = (0, 0, 0)
-        pcds = [origin, bbox, eric]
+        pcds = [origin, bbox]
         o3d.visualization.draw_geometries(pcds)
-
-    if not args.debug:
-        write_ply(vertices, faces, os.path.join(output_dir, args.scanID + '_with_eric.ply'), False)
 
 
 if __name__ == "__main__":

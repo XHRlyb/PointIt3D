@@ -1,10 +1,6 @@
 import argparse
 import math
-import os
-import numpy as np
 import open3d as o3d
-import copy
-from plyfile import PlyData, PlyElement
 from util import *
 from util_3d import *
 
@@ -50,6 +46,54 @@ def rotate_a_eric(obj_x, obj_y, obj_z, foot_x=0.0, foot_y=0.0):
         eric_name = 'eric_{}.ply'.format(-phi_0)  # phi_0
     return eric_name, costhe, sinthe
     # return eric_name, 1, 0
+
+
+def eric_bbox(eric_file):
+    f = open(eric_file, 'rb')
+    ply_eric = PlyData.read(f)
+    num_verts1 = ply_eric['vertex'].count
+    minx, maxx, miny, maxy, minz, maxz = 0, 0, 0, 0, 0, 0
+
+    for i in range(num_verts1):
+            x, y, z, _, _, _, _, _ = ply_eric['vertex'][i]
+            if i == 0:
+                minx = x
+                maxx = x
+                miny = y
+                maxy = y
+                minz = z
+                maxz = z
+            else:
+                minx = min(minx, x)
+                maxx = max(maxx, x)
+                miny = min(miny, y)
+                maxy = max(maxy, y)
+                minz = min(minz, z)
+                maxz = max(maxz, z)
+    cx = (minx + maxx) / 2
+    cy = (miny + maxy) / 2
+    cz = (minz + maxz) / 2
+    print('x',minx,maxx)
+    print('y',miny,maxy)
+    print('z',minz,maxz)
+    print('cx',cx)
+    print('cy',cy)
+    print('cz',cz)
+    mul=1.4
+    print('x',mul*(minx-cx)+cx,mul*(maxx-cx)+cx)
+    print('y',mul*(miny-cy)+cy,mul*(maxy-cy)+cy)
+    print('z',minz,maxz)
+
+
+def intersect(x1, x2, ax1, ax2):
+    if x1 > ax1:
+        t = x1
+        x1 = ax1
+        ax1 = t
+        t = x2
+        x2 = ax2
+        ax2 = t
+    return x2 > ax1
 
 
 def main():
@@ -123,6 +167,55 @@ def main():
     cy = (miny + maxy) / 2
     cz = (minz + maxz) / 2
 
+    # add random translation and avoid overlapping
+    obbox = []
+    floorbbox = [0.0, 0.0, 0.0, 0.0]
+    ericbbox = [-0.341, 0.335, -0.286, 0.208, -0.00487, 1.86]
+    for j in range(1, len(object_id_to_segs) + 1):
+        minx, maxx, miny, maxy, minz, maxz = 0, 0, 0, 0, 0, 0
+        for i, seg in enumerate(object_id_to_segs[id]):
+            for ver in seg_to_verts[seg]:
+                # print(ver, vertices[ver])
+                if i == 0:
+                    minx = vertices[ver][0]
+                    maxx = vertices[ver][0]
+                    miny = vertices[ver][1]
+                    maxy = vertices[ver][1]
+                    minz = vertices[ver][2]
+                    maxz = vertices[ver][2]
+                else:
+                    minx = min(minx, vertices[ver][0])
+                    maxx = max(maxx, vertices[ver][0])
+                    miny = min(miny, vertices[ver][1])
+                    maxy = max(maxy, vertices[ver][1])
+                    minz = min(minz, vertices[ver][2])
+                    maxz = max(maxz, vertices[ver][2])
+        if vertices[seg_to_verts[object_id_to_segs[j][0]][0]][-1] == 2:
+            floorbbox = [minx, maxx, miny, maxy]
+            continue
+        # print(j,minx, maxx, miny, maxy, minz, maxz)
+        obbox.append((minx, maxx, miny, maxy, minz, maxz))
+
+    cnt = 0
+    dx = 0.0
+    dy = 0.0
+    while cnt <= 10000:
+        fail = -1
+        for i, o in enumerate(obbox):
+            if intersect(o[0], o[1], ericbbox[0], ericbbox[1]) and intersect(o[2], o[3], ericbbox[2], ericbbox[3]) and intersect(o[4], o[5], ericbbox[4], ericbbox[5]):
+                fail = i + 1
+                break
+        if fail == -1:
+            break
+        if cnt == 10000:
+            print('failed')
+            exit()
+        cnt += 1
+        dx = np.random.random_sample() * (floorbbox[1] - floorbbox[0]) + floorbbox[0] - 0.5 * (ericbbox[0] + ericbbox[1])
+        dy = np.random.random_sample() * (floorbbox[3] - floorbbox[2]) + floorbbox[2] - 0.5 * (ericbbox[2] + ericbbox[3])
+
+    print('accepted after {} times, dx, dy=({}, {})'.format(cnt, dx, dy))
+
     if not args.debug:
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
@@ -131,7 +224,7 @@ def main():
             f.write(str(id))
 
     # process person
-    eric_name, costhe, sinthe = rotate_a_eric(cx, cy, cz)
+    eric_name, costhe, sinthe = rotate_a_eric(cx, cy, cz, dx, dy)
     if eric_name is None:
         print('NO SUIT ERIC!')
         exit(0)

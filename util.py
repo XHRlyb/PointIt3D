@@ -1,3 +1,4 @@
+import copy
 import json
 import os, sys
 import csv
@@ -41,11 +42,11 @@ def read_aggregation(filename):
             object_id = data['segGroups'][i]['objectId'] + 1 # instance ids should be 1-indexed
             label = data['segGroups'][i]['label']
             segs = data['segGroups'][i]['segments']
-            object_id_to_segs[object_id] = segs
+            object_id_to_segs[object_id] = copy.deepcopy(segs)
             if label in label_to_segs:
                 label_to_segs[label].extend(segs)
             else:
-                label_to_segs[label] = segs
+                label_to_segs[label] = copy.deepcopy(segs)
     return object_id_to_segs, label_to_segs
 
 

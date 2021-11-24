@@ -33,6 +33,7 @@ def read_ply(filename):
 	pc_array = np.array([[x, y, z, r, g, b, a, l] for x, y, z, r, g, b, a, l in pc])
 	return pc_array, plydata['face'].data
 
+
 def rotate_a_eric(obj_x, obj_y, obj_z, foot_x = 0.0, foot_y = 0.0):
 	arm_vec_x, arm_vec_y, arm_vec_z = -0.02023186, -0.05549748, 1.51
 	hand_x, hand_y, hand_z = foot_x + arm_vec_x, foot_y + arm_vec_y, arm_vec_z
@@ -45,10 +46,11 @@ def rotate_a_eric(obj_x, obj_y, obj_z, foot_x = 0.0, foot_y = 0.0):
 	print(costhe, sinthe)
 	phi_0 = int((phi + 2.5) / 5) * 5
 	print(obj_x, obj_y, obj_z, hand_z, phi, phi_0)
-	if phi_0 <= 15 and phi_0 >= -30: 
-		eric_name = 'eric_{}.ply'.format(-phi_0)#phi_0
+	if 15 >= phi_0 >= -30:
+		eric_name = 'eric_{}.ply'.format(-phi_0)  # phi_0
 	return eric_name, costhe, sinthe
-	#return eric_name, 1, 0
+	# return eric_name, 1, 0
+
 
 def main():
 	parser = argparse.ArgumentParser()

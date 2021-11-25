@@ -169,7 +169,9 @@ def main():
 
     # add random translation and avoid overlapping
     obbox = []
-    floorbbox = [0.0, 0.0, 0.0, 0.0]
+    floorbbox = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    floor_z = 0.0
+    floor_vcnt = 0
     ericbbox = [-0.341, 0.335, -0.286, 0.208, -0.00487, 1.86]
     for j in range(1, len(object_id_to_segs) + 1):
         minx, maxx, miny, maxy, minz, maxz = 0, 0, 0, 0, 0, 0
@@ -190,29 +192,44 @@ def main():
                     maxy = max(maxy, vertices[ver][1])
                     minz = min(minz, vertices[ver][2])
                     maxz = max(maxz, vertices[ver][2])
+                #if vertices[seg_to_verts[object_id_to_segs[j][0]][0]][-1] == 2:
+                #    floor_z += vertices[ver][2]
+                #    floor_vcnt += 1
         if vertices[seg_to_verts[object_id_to_segs[j][0]][0]][-1] == 2:
-            floorbbox = [minx, maxx, miny, maxy]
+            floorbbox = [minx, maxx, miny, maxy,minz, maxz]
             continue
         # print(j,minx, maxx, miny, maxy, minz, maxz)
         obbox.append((minx, maxx, miny, maxy, minz, maxz))
+    if floor_vcnt > 0:
+        floor_z = floor_z / floor_vcnt
 
     cnt = 0
     dx = 0.0
     dy = 0.0
-    while cnt <= 10000:
+    dz = 0.0 #dz = floor_z-ericbbox[4]
+    #print('dz',dz)
+    ti = 10000
+    while cnt <= ti:
         fail = -1
         for i, o in enumerate(obbox):
-            if intersect(o[0], o[1], ericbbox[0] + dx, ericbbox[1] + dx) and intersect(o[2], o[3], ericbbox[2] + dy, ericbbox[3] + dy) and intersect(o[4], o[5], ericbbox[4], ericbbox[5]):
+            if intersect(o[0], o[1], ericbbox[0] + dx, ericbbox[1] + dx) and intersect(o[2], o[3], ericbbox[2] + dy, ericbbox[3] + dy) and intersect(o[4], o[5], ericbbox[4]+dz, ericbbox[5]+dz):
                 fail = i + 1
                 break
         if fail == -1:
             break
-        if cnt == 10000:
+
+        #ff = fail-1
+        #print('failed: id =',ff)
+        #print('person:',ericbbox[0]+dx,ericbbox[1]+dx,ericbbox[2]+dy,ericbbox[3]+dy,ericbbox[4],ericbbox[5])
+        #print('object:',o[0],o[1],o[2],o[3],o[4],o[5])
+
+        if cnt == ti:
             print('failed')
             exit()
         cnt += 1
         dx = np.random.random_sample() * (floorbbox[1] - floorbbox[0]) + floorbbox[0] - 0.5 * (ericbbox[0] + ericbbox[1])
         dy = np.random.random_sample() * (floorbbox[3] - floorbbox[2]) + floorbbox[2] - 0.5 * (ericbbox[2] + ericbbox[3])
+
     print("floor:", floorbbox)
     print('{}: accepted after {} times, dx, dy=({}, {})'.format(args.scanID, cnt, dx, dy))
 
@@ -239,11 +256,9 @@ def main():
         fac = []
         for i in range(num_verts1):
             x, y, z, _, _, _, _, _ = ply_eric['vertex'][i]
-            x += dx
-            y += dy
             xx = x * costhe - y * sinthe
             yy = x * sinthe + y * costhe
-            ver.append((xx, yy, z, 255, 0, 0, 240, 42))
+            ver.append((xx+dx, yy+dy, z+dz, 255, 0, 0, 240, 42))
         vertices = np.concatenate((vertices, np.array(ver, dtype=vertices.dtype)))
 
         for i in range(num_faces):

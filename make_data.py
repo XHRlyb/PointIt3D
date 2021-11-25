@@ -173,7 +173,7 @@ def main():
     ericbbox = [-0.341, 0.335, -0.286, 0.208, -0.00487, 1.86]
     for j in range(1, len(object_id_to_segs) + 1):
         minx, maxx, miny, maxy, minz, maxz = 0, 0, 0, 0, 0, 0
-        for i, seg in enumerate(object_id_to_segs[id]):
+        for i, seg in enumerate(object_id_to_segs[j]):
             for ver in seg_to_verts[seg]:
                 # print(ver, vertices[ver])
                 if i == 0:

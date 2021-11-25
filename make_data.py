@@ -202,7 +202,7 @@ def main():
     while cnt <= 10000:
         fail = -1
         for i, o in enumerate(obbox):
-            if intersect(o[0], o[1], ericbbox[0], ericbbox[1]) and intersect(o[2], o[3], ericbbox[2], ericbbox[3]) and intersect(o[4], o[5], ericbbox[4], ericbbox[5]):
+            if intersect(o[0], o[1], ericbbox[0] + dx, ericbbox[1] + dx) and intersect(o[2], o[3], ericbbox[2] + dy, ericbbox[3] + dy) and intersect(o[4], o[5], ericbbox[4], ericbbox[5]):
                 fail = i + 1
                 break
         if fail == -1:
@@ -213,8 +213,8 @@ def main():
         cnt += 1
         dx = np.random.random_sample() * (floorbbox[1] - floorbbox[0]) + floorbbox[0] - 0.5 * (ericbbox[0] + ericbbox[1])
         dy = np.random.random_sample() * (floorbbox[3] - floorbbox[2]) + floorbbox[2] - 0.5 * (ericbbox[2] + ericbbox[3])
-
-    print('accepted after {} times, dx, dy=({}, {})'.format(cnt, dx, dy))
+    print("floor:", floorbbox)
+    print('{}: accepted after {} times, dx, dy=({}, {})'.format(args.scanID, cnt, dx, dy))
 
     if not args.debug:
         if not os.path.exists(output_dir):
@@ -226,8 +226,8 @@ def main():
     # process person
     eric_name, costhe, sinthe = rotate_a_eric(cx, cy, cz, dx, dy)
     if eric_name is None:
-        print('NO SUIT ERIC!')
-        exit(0)
+        print('NO SUIT ERIC! Using default')
+        eric_name = 'eric_0.ply'
     print(eric_name, id)
     eric_file = os.path.join('eric', eric_name)
 
@@ -239,11 +239,11 @@ def main():
         fac = []
         for i in range(num_verts1):
             x, y, z, _, _, _, _, _ = ply_eric['vertex'][i]
+            x += dx
+            y += dy
             xx = x * costhe - y * sinthe
             yy = x * sinthe + y * costhe
-            x = xx
-            y = yy
-            ver.append((x, y, z, 255, 0, 0, 240, 42))
+            ver.append((xx, yy, z, 255, 0, 0, 240, 42))
         vertices = np.concatenate((vertices, np.array(ver, dtype=vertices.dtype)))
 
         for i in range(num_faces):

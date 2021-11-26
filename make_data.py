@@ -200,8 +200,22 @@ def main():
             continue
         # print(j,minx, maxx, miny, maxy, minz, maxz)
         obbox.append((minx, maxx, miny, maxy, minz, maxz))
-    if floor_vcnt > 0:
-        floor_z = floor_z / floor_vcnt
+    # if floor_vcnt > 0:
+    #     floor_z = floor_z / floor_vcnt
+
+    if floorbbox[1] - floorbbox[0] > 1:
+        floorbbox[1] -= 0.5
+        floorbbox[0] += 0.5
+    else :
+        floorbbox[0] = 0.5*(floorbbox[0] + floorbbox[1])
+        floorbbox[1] = floorbbox[0]
+
+    if floorbbox[3] - floorbbox[2] > 1:
+        floorbbox[3] -= 0.5
+        floorbbox[2] += 0.5
+    else :
+        floorbbox[2] = 0.5*(floorbbox[2] + floorbbox[3])
+        floorbbox[3] = floorbbox[2]
 
     cnt = 0
     dx = 0.0

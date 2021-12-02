@@ -22,12 +22,14 @@ def write_ply(points, face, filename, text=True):
     PlyData(el, text=text).write(filename)
 
 
-def read_ply(filename):
+def read_ply(labels_file, colors_file):
     """ read XYZRGBAL point cloud from filename PLY file """
-    plydata = PlyData.read(filename)
-    pc = plydata['vertex'].data
-    pc_array = np.array([[x, y, z, r, g, b, a, l] for x, y, z, r, g, b, a, l in pc])
-    return pc_array, plydata['face'].data
+    plydata_labels = PlyData.read(labels_file)
+    plydata_colors = PlyData.read(colors_file)
+    pl = plydata_labels['vertex'].data
+    pc = plydata_colors['vertex'].data
+    pc_array = np.array([[x, y, z, r, g, b, a, l] for (x, y, z, r, g, b, a), (_, _, _, _, _, _, _, l) in zip(pc, pl)])
+    return pc_array, plydata_labels['face'].data
 
 
 def rotate_a_eric(obj_x, obj_y, obj_z, foot_x=0.0, foot_y=0.0):
@@ -43,7 +45,7 @@ def rotate_a_eric(obj_x, obj_y, obj_z, foot_x=0.0, foot_y=0.0):
     phi_0 = int((phi + 2.5) / 5) * 5
     # print(obj_x, obj_y, obj_z, hand_z, phi, phi_0)
     if 15 >= phi_0 >= -30:
-        eric_name = 'eric_{}.ply'.format(-phi_0)  # phi_0
+        eric_name = 'eric_{}'.format(-phi_0)  # phi_0
     return eric_name, costhe, sinthe
     # return eric_name, 1, 0
 
@@ -88,11 +90,8 @@ def eric_bbox(eric_file):
 def intersect(x1, x2, ax1, ax2):
     if x1 > ax1:
         t = x1
-        x1 = ax1
         ax1 = t
-        t = x2
         x2 = ax2
-        ax2 = t
     return x2 > ax1
 
 
@@ -105,7 +104,7 @@ def main():
                         required=True,
                         type=str)
     parser.add_argument("--object_id", help="if you want to specify the id to point at", type=int)
-    parser.add_argument("--seed", help="seed", type=int)
+    parser.add_argument("--seed", help="seed", type=int, default=42)
     parser.add_argument("--visualize", action="store_true", help="visualization")
     parser.add_argument("--debug", action="store_true", help="debug")
 
@@ -113,18 +112,18 @@ def main():
     data_dir = os.path.join(args.data_dir, args.scanID)
     output_dir = os.path.join('ScanNet_with_eric', args.scanID + '_with_eric')
     mesh_with_labels_file = os.path.join(data_dir, args.scanID + '_vh_clean_2.labels.ply')
+    mesh_with_colors_file = os.path.join(data_dir, args.scanID + '_vh_clean_2.ply')
     meta_file = os.path.join(data_dir, args.scanID + ".txt")
     aggregation_file = os.path.join(data_dir, args.scanID + ".aggregation.json")
     segs_file = os.path.join(data_dir, args.scanID + "_vh_clean_2.0.010000.segs.json")
 
-    if args.seed:
-        np.random.seed(args.seed)
+    np.random.seed(args.seed)
 
     # read files
-    object_id_to_segs, label_to_segs = read_aggregation(aggregation_file)  # 'floor' -> 6555 (object_id is 1-indexed)
-    seg_to_verts, num_verts = read_segmentation(segs_file)  # 6555 -> 3
+    object_id_to_segs, label_to_segs = read_aggregation(aggregation_file)  # 1, 'floor' -> 6555 (object_id is 1-indexed)
+    seg_to_verts, num_verts = read_segmentation(segs_file)  # 6555 -> [3, 4, 6]
     label_mapping = read_label_mapping(args.labels_dir)  # 'floor' ->  2
-    vertices, faces = read_ply(mesh_with_labels_file)
+    vertices, faces = read_ply(mesh_with_labels_file, mesh_with_colors_file)
 
     # aligns the scene to origin point
 
@@ -170,8 +169,8 @@ def main():
     # add random translation and avoid overlapping
     obbox = []
     floorbbox = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    floor_z = 0.0
-    floor_vcnt = 0
+    # floor_z = 0.0
+    # floor_vcnt = 0
     ericbbox = [-0.341, 0.335, -0.286, 0.208, -0.00487, 1.86]
     for j in range(1, len(object_id_to_segs) + 1):
         minx, maxx, miny, maxy, minz, maxz = 0, 0, 0, 0, 0, 0
@@ -192,37 +191,41 @@ def main():
                     maxy = max(maxy, vertices[ver][1])
                     minz = min(minz, vertices[ver][2])
                     maxz = max(maxz, vertices[ver][2])
-                #if vertices[seg_to_verts[object_id_to_segs[j][0]][0]][-1] == 2:
+                # if vertices[seg_to_verts[object_id_to_segs[j][0]][0]][-1] == 2:
                 #    floor_z += vertices[ver][2]
                 #    floor_vcnt += 1
-        if vertices[seg_to_verts[object_id_to_segs[j][0]][0]][-1] == 2:
-            floorbbox = [minx, maxx, miny, maxy,minz, maxz]
+        if vertices[seg_to_verts[object_id_to_segs[j][0]][0]][-1] == label_mapping['floor']:
+            floorbbox = [minx, maxx, miny, maxy, minz, maxz]
             continue
         # print(j,minx, maxx, miny, maxy, minz, maxz)
         obbox.append((minx, maxx, miny, maxy, minz, maxz))
     # if floor_vcnt > 0:
     #     floor_z = floor_z / floor_vcnt
-
+    # shrink the floor
     if floorbbox[1] - floorbbox[0] > 1:
         floorbbox[1] -= 0.5
         floorbbox[0] += 0.5
-    else :
+    else:
         floorbbox[0] = 0.5*(floorbbox[0] + floorbbox[1])
         floorbbox[1] = floorbbox[0]
 
     if floorbbox[3] - floorbbox[2] > 1:
         floorbbox[3] -= 0.5
         floorbbox[2] += 0.5
-    else :
+    else:
         floorbbox[2] = 0.5*(floorbbox[2] + floorbbox[3])
         floorbbox[3] = floorbbox[2]
 
     cnt = 0
     dx = 0.0
     dy = 0.0
-    dz = 0.0 #dz = floor_z-ericbbox[4]
-    #print('dz',dz)
+    dz = 0.0  # dz = floor_z-ericbbox[4]
+    # print('dz',dz)
     ti = 10000
+    last_ok = None
+    eric_name = None
+    costhe = None
+    sinthe = None
     while cnt <= ti:
         fail = -1
         for i, o in enumerate(obbox):
@@ -230,37 +233,43 @@ def main():
                 fail = i + 1
                 break
         if fail == -1:
-            break
+            last_ok = (dx, dy)
+            eric_name, costhe, sinthe = rotate_a_eric(cx, cy, cz, dx, dy)
+            if eric_name:
+                break
 
-        #ff = fail-1
-        #print('failed: id =',ff)
-        #print('person:',ericbbox[0]+dx,ericbbox[1]+dx,ericbbox[2]+dy,ericbbox[3]+dy,ericbbox[4],ericbbox[5])
-        #print('object:',o[0],o[1],o[2],o[3],o[4],o[5])
+        # ff = fail-1
+        # print('failed: id =',ff)
+        # print('person:',ericbbox[0]+dx,ericbbox[1]+dx,ericbbox[2]+dy,ericbbox[3]+dy,ericbbox[4],ericbbox[5])
+        # print('object:',o[0],o[1],o[2],o[3],o[4],o[5])
 
         if cnt == ti:
-            print('failed')
-            exit()
+            if last_ok is None:
+                print('failed')
+                exit()
+            else:
+                dx, dy = last_ok
+                eric_name, costhe, sinthe = rotate_a_eric(cx, cy, cz, dx, dy)
+                print('NO SUIT ERIC! Using default')
+                eric_name = 'eric_0'
+                break
         cnt += 1
         dx = np.random.random_sample() * (floorbbox[1] - floorbbox[0]) + floorbbox[0] - 0.5 * (ericbbox[0] + ericbbox[1])
         dy = np.random.random_sample() * (floorbbox[3] - floorbbox[2]) + floorbbox[2] - 0.5 * (ericbbox[2] + ericbbox[3])
 
-    print("floor:", floorbbox)
-    print('{}: accepted after {} times, dx, dy=({}, {})'.format(args.scanID, cnt, dx, dy))
+    # print("floor:", floorbbox)
+    print('{}: Seed: {}, Selected_ID: {}, accepted after {} times, dx, dy=({}, {}), {}'.format(args.scanID, args.seed, id, cnt, dx, dy, eric_name))
 
     if not args.debug:
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
 
         with open(os.path.join(output_dir, 'answer.txt'), 'w') as f:
-            f.write(str(id))
+            f.write(str(id) + '\n')
+            f.write(str(obbox[id]))
 
     # process person
-    eric_name, costhe, sinthe = rotate_a_eric(cx, cy, cz, dx, dy)
-    if eric_name is None:
-        print('NO SUIT ERIC! Using default')
-        eric_name = 'eric_0.ply'
-    print(eric_name, id)
-    eric_file = os.path.join('eric', eric_name)
+    eric_file = os.path.join('eric', eric_name + '(with color).ply')
 
     with open(eric_file, 'rb') as f:
         ply_eric = PlyData.read(f)
@@ -269,10 +278,10 @@ def main():
         ver = []
         fac = []
         for i in range(num_verts1):
-            x, y, z, _, _, _, _, _ = ply_eric['vertex'][i]
+            x, y, z, _, _, _, _, _, r, g, b, a = ply_eric['vertex'][i]
             xx = x * costhe - y * sinthe
             yy = x * sinthe + y * costhe
-            ver.append((xx+dx, yy+dy, z+dz, 255, 0, 0, 240, 42))
+            ver.append((xx+dx, yy+dy, z+dz, r, g, b, a, 42))
         vertices = np.concatenate((vertices, np.array(ver, dtype=vertices.dtype)))
 
         for i in range(num_faces):
@@ -281,7 +290,7 @@ def main():
         new_fac = np.empty(num_faces, dtype=faces.dtype)
         new_fac['vertex_indices'] = fac
         faces = np.concatenate((faces, new_fac))
-    vertices = np.concatenate((vertices, np.array([[cx, cy, cz, 255, 0, 0, 240, 111]], dtype=vertices.dtype)))
+    # vertices = np.concatenate((vertices, np.array([[cx, cy, cz, 255, 0, 0, 240, 111]], dtype=vertices.dtype)))
 
     if not args.debug:
         write_ply(vertices, faces, os.path.join(output_dir, args.scanID + '_with_eric.ply'), False)

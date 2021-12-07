@@ -199,9 +199,11 @@ def main():
                 #    floor_vcnt += 1
         if vertices[seg_to_verts[object_id_to_segs[j][0]][0]][-1] == label_mapping['floor']:
             floorbbox = [minx, maxx, miny, maxy, minz, maxz]
-            continue
+            # minx, maxx, miny, maxy, minz, maxz = -100, -100, -100, -100, -100, -100
+            # continue
         # print(j,minx, maxx, miny, maxy, minz, maxz)
         obbox.append((minx, maxx, miny, maxy, minz, maxz))
+    assert len(obbox) == len(object_id_to_segs)
     # if floor_vcnt > 0:
     #     floor_z = floor_z / floor_vcnt
     # shrink the floor
@@ -232,6 +234,8 @@ def main():
     while cnt <= ti:
         fail = -1
         for i, o in enumerate(obbox):
+            if vertices[seg_to_verts[object_id_to_segs[i + 1][0]][0]][-1] == label_mapping['floor']:
+                continue
             if intersect(o[0], o[1], ericbbox[0] + dx, ericbbox[1] + dx) and intersect(o[2], o[3], ericbbox[2] + dy, ericbbox[3] + dy) and intersect(o[4], o[5], ericbbox[4]+dz, ericbbox[5]+dz):
                 fail = i + 1
                 break

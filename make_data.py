@@ -1,5 +1,7 @@
 import argparse
 import math
+import random
+
 import open3d as o3d
 from util import *
 from util_3d import *
@@ -45,7 +47,7 @@ def rotate_a_eric(obj_x, obj_y, obj_z, foot_x=0.0, foot_y=0.0):
     phi_0 = int((phi + 2.5) / 5) * 5
     # print(obj_x, obj_y, obj_z, hand_z, phi, phi_0)
     if 15 >= phi_0 >= -30:
-        eric_name = 'eric_{}'.format(-phi_0)  # phi_0
+        eric_name = 'eric_{}_{}'.format(-phi_0, random.randint(0, 99))  # phi_0
     return eric_name, costhe, sinthe
     # return eric_name, 1, 0
 
@@ -117,8 +119,8 @@ def main():
     aggregation_file = os.path.join(data_dir, args.scanID + ".aggregation.json")
     segs_file = os.path.join(data_dir, args.scanID + "_vh_clean_2.0.010000.segs.json")
 
+    random.seed(args.scanID)
     np.random.seed(args.seed)
-
     # read files
     object_id_to_segs, label_to_segs = read_aggregation(aggregation_file)  # 1, 'floor' -> 6555 (object_id is 1-indexed)
     seg_to_verts, num_verts = read_segmentation(segs_file)  # 6555 -> [3, 4, 6]
@@ -141,7 +143,8 @@ def main():
 
     # choose the object to be pointed to and the angle the person should rotate
 
-    id = np.random.randint(1, len(object_id_to_segs) + 1)
+    id = random.randint(1, len(object_id_to_segs))
+
     if args.object_id:
         id = args.object_id
     minx, maxx, miny, maxy, minz, maxz = 0, 0, 0, 0, 0, 0
@@ -251,7 +254,7 @@ def main():
                 dx, dy = last_ok
                 eric_name, costhe, sinthe = rotate_a_eric(cx, cy, cz, dx, dy)
                 print('NO SUIT ERIC! Using default')
-                eric_name = 'eric_0'
+                eric_name = 'eric_0_{}'.format(random.randint(0, 99))
                 break
         cnt += 1
         dx = np.random.random_sample() * (floorbbox[1] - floorbbox[0]) + floorbbox[0] - 0.5 * (ericbbox[0] + ericbbox[1])
@@ -269,7 +272,7 @@ def main():
             f.write(str(obbox[id]))
 
     # process person
-    eric_file = os.path.join('eric', eric_name + '(with color).ply')
+    eric_file = os.path.join('eric', eric_name + '.ply')
 
     with open(eric_file, 'rb') as f:
         ply_eric = PlyData.read(f)

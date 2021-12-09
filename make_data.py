@@ -119,7 +119,7 @@ def main():
     aggregation_file = os.path.join(data_dir, args.scanID + ".aggregation.json")
     segs_file = os.path.join(data_dir, args.scanID + "_vh_clean_2.0.010000.segs.json")
 
-    random.seed(args.scanID)
+    random.seed(args.scanID + str(args.seed))
     np.random.seed(args.seed)
     # read files
     object_id_to_segs, label_to_segs = read_aggregation(aggregation_file)  # 1, 'floor' -> 6555 (object_id is 1-indexed)
@@ -141,35 +141,7 @@ def main():
         pts = np.dot(pts, axis_align_matrix.transpose())
         vertices[:, :3] = pts[:, :3]
 
-    # choose the object to be pointed to and the angle the person should rotate
-
-    id = random.randint(1, len(object_id_to_segs))
-
-    if args.object_id:
-        id = args.object_id
-    minx, maxx, miny, maxy, minz, maxz = 0, 0, 0, 0, 0, 0
-    for i, seg in enumerate(object_id_to_segs[id]):
-        for ver in seg_to_verts[seg]:
-            # print(ver, vertices[ver])
-            if i == 0:
-                minx = vertices[ver][0]
-                maxx = vertices[ver][0]
-                miny = vertices[ver][1]
-                maxy = vertices[ver][1]
-                minz = vertices[ver][2]
-                maxz = vertices[ver][2]
-            else:
-                minx = min(minx, vertices[ver][0])
-                maxx = max(maxx, vertices[ver][0])
-                miny = min(miny, vertices[ver][1])
-                maxy = max(maxy, vertices[ver][1])
-                minz = min(minz, vertices[ver][2])
-                maxz = max(maxz, vertices[ver][2])
-    cx = (minx + maxx) / 2
-    cy = (miny + maxy) / 2
-    cz = (minz + maxz) / 2
-
-    # add random translation and avoid overlapping
+    candidate_ids = []
     obbox = []
     floorbbox = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     # floor_z = 0.0
@@ -201,25 +173,40 @@ def main():
             floorbbox = [minx, maxx, miny, maxy, minz, maxz]
             # minx, maxx, miny, maxy, minz, maxz = -100, -100, -100, -100, -100, -100
             # continue
+        elif vertices[seg_to_verts[object_id_to_segs[j][0]][0]][-1] == label_mapping['wall'] or vertices[seg_to_verts[object_id_to_segs[j][0]][0]][-1] == label_mapping['ceiling']:
+            print('{} is wall'.format(j))
+        else:
+            candidate_ids.append(j)
         # print(j,minx, maxx, miny, maxy, minz, maxz)
         obbox.append((minx, maxx, miny, maxy, minz, maxz))
     assert len(obbox) == len(object_id_to_segs)
     # if floor_vcnt > 0:
     #     floor_z = floor_z / floor_vcnt
     # shrink the floor
-    if floorbbox[1] - floorbbox[0] > 1:
-        floorbbox[1] -= 0.5
-        floorbbox[0] += 0.5
+    if floorbbox[1] - floorbbox[0] > 2:
+        floorbbox[1] -= 1
+        floorbbox[0] += 1
     else:
-        floorbbox[0] = 0.5*(floorbbox[0] + floorbbox[1])
+        floorbbox[0] = 0.5 * (floorbbox[0] + floorbbox[1])
         floorbbox[1] = floorbbox[0]
 
-    if floorbbox[3] - floorbbox[2] > 1:
-        floorbbox[3] -= 0.5
-        floorbbox[2] += 0.5
+    if floorbbox[3] - floorbbox[2] > 2:
+        floorbbox[3] -= 1
+        floorbbox[2] += 1
     else:
-        floorbbox[2] = 0.5*(floorbbox[2] + floorbbox[3])
+        floorbbox[2] = 0.5 * (floorbbox[2] + floorbbox[3])
         floorbbox[3] = floorbbox[2]
+
+    # choose the object to be pointed to and the angle the person should rotate
+
+    id = random.sample(candidate_ids, 1)[0]
+    if args.object_id:
+        id = args.object_id
+    cx = (obbox[id - 1][0] + obbox[id - 1][1]) / 2
+    cy = (obbox[id - 1][2] + obbox[id - 1][3]) / 2
+    cz = (obbox[id - 1][4] + obbox[id - 1][5]) / 2
+
+    # add random translation and avoid overlapping
 
     cnt = 0
     dx = 0.0
@@ -262,8 +249,9 @@ def main():
                 break
         cnt += 1
         dx = np.random.random_sample() * (floorbbox[1] - floorbbox[0]) + floorbbox[0] - 0.5 * (ericbbox[0] + ericbbox[1])
+        dx *= cnt/ti
         dy = np.random.random_sample() * (floorbbox[3] - floorbbox[2]) + floorbbox[2] - 0.5 * (ericbbox[2] + ericbbox[3])
-
+        dy *= cnt/ti
     # print("floor:", floorbbox)
     print('{}: Seed: {}, Selected_ID: {}, accepted after {} times, dx, dy=({}, {}), {}'.format(args.scanID, args.seed, id, cnt, dx, dy, eric_name))
 
@@ -311,11 +299,11 @@ def main():
         origin.points = o3d.utility.Vector3dVector(n_pts)
         selected_object = copy.deepcopy(origin)
         selected_pts = [vertices[ver][:3] for seg in object_id_to_segs[id] for ver in seg_to_verts[seg]]
-        selected_colors = [vertices[ver][4:7] for seg in object_id_to_segs[id] for ver in seg_to_verts[seg]]
+        selected_colors = [vertices[ver][3:6] for seg in object_id_to_segs[id] for ver in seg_to_verts[seg]]
         selected_object.points = o3d.utility.Vector3dVector(selected_pts)
         selected_object.colors = o3d.utility.Vector3dVector(selected_colors)
         bbox = selected_object.get_axis_aligned_bounding_box()
-        bbox.color = (0, 0, 0)
+        bbox.color = (255, 0, 0)
         pcds = [origin, bbox]
         o3d.visualization.draw_geometries(pcds)
 

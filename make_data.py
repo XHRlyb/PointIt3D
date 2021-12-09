@@ -273,7 +273,7 @@ def main():
 
         with open(os.path.join(output_dir, 'answer.txt'), 'w') as f:
             f.write(str(id) + '\n')
-            f.write(str(obbox[id]))
+            f.write(str(obbox[id - 1]))
 
     # process person
     eric_file = os.path.join('eric', eric_name + '.ply')

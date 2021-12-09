@@ -32,3 +32,420 @@ scene0013_02: Seed: 42, Selected_ID: 7, accepted after 3 times, dx, dy=(-1.83647
 NO SUIT ERIC! Using default
 scene0014_00: Seed: 42, Selected_ID: 15, accepted after 10000 times, dx, dy=(-0.21684041120119624, -0.28330271518069977), eric_0_92
 scene0015_00: Seed: 42, Selected_ID: 37, accepted after 10 times, dx, dy=(-0.5301279230695971, -1.9091131845224607), eric_25_37
+scene0016_00: Seed: 42, Selected_ID: 7, accepted after 0 times, dx, dy=(0.0, 0.0), eric_25_89
+scene0016_01: Seed: 42, Selected_ID: 8, accepted after 10 times, dx, dy=(-0.7029562808770989, -0.461246336694699), eric_5_86
+scene0016_02: Seed: 42, Selected_ID: 30, accepted after 6 times, dx, dy=(-2.136853957469786, 2.058434102358084), eric_0_47
+scene0017_00: Seed: 42, Selected_ID: 20, accepted after 1 times, dx, dy=(-0.7104711234162476, 2.813184560191813), eric_25_20
+scene0017_01: Seed: 42, Selected_ID: 19, accepted after 3 times, dx, dy=(-0.4113942326756607, -1.6925277395044442), eric_0_87
+scene0017_02: Seed: 42, Selected_ID: 9, accepted after 10 times, dx, dy=(0.19448805379783207, -1.9464508535995648), eric_20_35
+scene0018_00: Seed: 42, Selected_ID: 16, accepted after 10 times, dx, dy=(-0.27254828399688513, 0.2647889022104604), eric_0_39
+scene0019_00: Seed: 42, Selected_ID: 10, accepted after 0 times, dx, dy=(0.0, 0.0), eric_10_99
+scene0019_01: Seed: 42, Selected_ID: 9, accepted after 0 times, dx, dy=(0.0, 0.0), eric_5_83
+scene0020_00: Seed: 42, Selected_ID: 2, accepted after 186 times, dx, dy=(-0.8813791774287527, -1.7993057714586205), eric_10_78
+scene0020_01: Seed: 42, Selected_ID: 33, accepted after 467 times, dx, dy=(1.6509218535592485, 0.07860381222510256), eric_15_27
+scene0021_00: Seed: 42, Selected_ID: 6, accepted after 1 times, dx, dy=(-0.2447536697104956, 2.3802908094992445), eric_25_64
+scene0022_00: Seed: 42, Selected_ID: 10, accepted after 0 times, dx, dy=(0.0, 0.0), eric_25_88
+scene0022_01: Seed: 42, Selected_ID: 15, accepted after 0 times, dx, dy=(0.0, 0.0), eric_25_57
+scene0023_00: Seed: 42, Selected_ID: 6, accepted after 3 times, dx, dy=(-1.2446869970077135, -2.9320778080832324), eric_25_98
+scene0024_00: Seed: 42, Selected_ID: 22, accepted after 0 times, dx, dy=(0.0, 0.0), eric_25_93
+scene0024_01: Seed: 42, Selected_ID: 39, accepted after 0 times, dx, dy=(0.0, 0.0), eric_30_43
+scene0024_02: Seed: 42, Selected_ID: 36, accepted after 0 times, dx, dy=(0.0, 0.0), eric_0_27
+scene0025_00: Seed: 42, Selected_ID: 31, accepted after 13 times, dx, dy=(-0.019973685309388922, 1.1598701067909138), eric_15_91
+scene0025_01: Seed: 42, Selected_ID: 30, accepted after 1 times, dx, dy=(-0.23584328622072348, 1.7231178242786045), eric_10_52
+scene0025_02: Seed: 42, Selected_ID: 24, accepted after 5 times, dx, dy=(0.22862470625508047, 0.9911617655020247), eric_10_38
+scene0026_00: Seed: 42, Selected_ID: 11, accepted after 0 times, dx, dy=(0.0, 0.0), eric_30_53
+scene0027_00: Seed: 42, Selected_ID: 19, accepted after 1 times, dx, dy=(-0.3847171641024315, 2.7582101621590343), eric_5_66
+scene0027_01: Seed: 42, Selected_ID: 9, accepted after 4 times, dx, dy=(-1.4743840630093796, 2.094826069814778), eric_-15_84
+scene0027_02: Seed: 42, Selected_ID: 9, accepted after 1 times, dx, dy=(-0.04424012204314287, 2.503968201801593), eric_5_90
+scene0028_00: Seed: 42, Selected_ID: 22, accepted after 5 times, dx, dy=(0.5529066774200481, 1.339601372207308), eric_20_58
+failed
+failed
+failed
+scene0030_00: Seed: 42, Selected_ID: 80, accepted after 4 times, dx, dy=(-1.7458596019869588, 1.91707359273289), eric_-5_61
+scene0030_01: Seed: 42, Selected_ID: 39, accepted after 4 times, dx, dy=(-1.5745057347396907, 2.176176283804121), eric_10_14
+scene0030_02: Seed: 42, Selected_ID: 13, accepted after 4 times, dx, dy=(-1.7004829389794094, 1.8589383128630128), eric_30_4
+scene0031_00: Seed: 42, Selected_ID: 3, accepted after 0 times, dx, dy=(0.0, 0.0), eric_20_39
+scene0031_01: Seed: 42, Selected_ID: 15, accepted after 1 times, dx, dy=(-1.4800786882221293, 2.6958528764059078), eric_15_18
+scene0031_02: Seed: 42, Selected_ID: 11, accepted after 10 times, dx, dy=(0.44021010920810644, -0.8522975500912521), eric_30_96
+scene0032_00: Seed: 42, Selected_ID: 1, accepted after 7 times, dx, dy=(1.05490044844771, -0.8585365963619241), eric_10_32
+scene0032_01: Seed: 42, Selected_ID: 8, accepted after 3 times, dx, dy=(-0.7048404128888042, -0.8968487617108013), eric_0_45
+scene0033_00: Seed: 42, Selected_ID: 6, accepted after 0 times, dx, dy=(0.0, 0.0), eric_10_75
+scene0034_00: Seed: 42, Selected_ID: 33, accepted after 0 times, dx, dy=(0.0, 0.0), eric_25_89
+scene0034_01: Seed: 42, Selected_ID: 35, accepted after 28 times, dx, dy=(0.21553099572512824, 0.859832700470735), eric_20_66
+scene0034_02: Seed: 42, Selected_ID: 32, accepted after 10 times, dx, dy=(-0.029948301572638836, -0.7762191738134389), eric_-5_57
+scene0035_00: Seed: 42, Selected_ID: 8, accepted after 49 times, dx, dy=(0.7054297144550422, -0.12399640868850163), eric_30_0
+scene0035_01: Seed: 42, Selected_ID: 4, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_24
+scene0036_00: Seed: 42, Selected_ID: 19, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_73
+scene0036_01: Seed: 42, Selected_ID: 10, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_0
+scene0037_00: Seed: 42, Selected_ID: 24, accepted after 3 times, dx, dy=(-2.7213250145468924, -1.8097646787501185), eric_20_0
+scene0038_00: Seed: 42, Selected_ID: 13, accepted after 0 times, dx, dy=(0.0, 0.0), eric_5_89
+scene0038_01: Seed: 42, Selected_ID: 23, accepted after 0 times, dx, dy=(0.0, 0.0), eric_20_64
+scene0038_02: Seed: 42, Selected_ID: 7, accepted after 0 times, dx, dy=(0.0, 0.0), eric_10_52
+scene0039_00: Seed: 42, Selected_ID: 16, accepted after 5 times, dx, dy=(0.2156599515672456, 0.4752651091821936), eric_25_11
+scene0039_01: Seed: 42, Selected_ID: 5, accepted after 21 times, dx, dy=(-1.010441827938418, -0.37702935833570445), eric_30_56
+scene0040_00: Seed: 42, Selected_ID: 46, accepted after 7 times, dx, dy=(0.8196040775936634, -1.256279605084976), eric_10_3
+scene0040_01: Seed: 42, Selected_ID: 11, accepted after 7 times, dx, dy=(0.9887716146814037, -1.2803730316390072), eric_5_33
+scene0041_00: Seed: 42, Selected_ID: 29, accepted after 0 times, dx, dy=(0.0, 0.0), eric_10_12
+NO SUIT ERIC! Using default
+scene0041_01: Seed: 42, Selected_ID: 1, accepted after 10000 times, dx, dy=(0.0, 0.0), eric_0_50
+scene0042_00: Seed: 42, Selected_ID: 7, accepted after 0 times, dx, dy=(0.0, 0.0), eric_25_17
+scene0042_01: Seed: 42, Selected_ID: 14, accepted after 7 times, dx, dy=(0.6420616561724891, -1.2710896146140265), eric_5_19
+scene0042_02: Seed: 42, Selected_ID: 7, accepted after 7 times, dx, dy=(0.5385988729761685, -1.0842622017743644), eric_30_51
+scene0043_00: Seed: 42, Selected_ID: 6, accepted after 1 times, dx, dy=(-0.3847695082989605, 3.3312851059715807), eric_15_75
+scene0043_01: Seed: 42, Selected_ID: 16, accepted after 4 times, dx, dy=(-1.7464972738457831, 1.1611313458540418), eric_5_43
+scene0044_00: Seed: 42, Selected_ID: 1, accepted after 9 times, dx, dy=(-0.4473408657564182, -0.7745282692385346), eric_20_99
+NO SUIT ERIC! Using default
+scene0044_01: Seed: 42, Selected_ID: 12, accepted after 10000 times, dx, dy=(0.350524851582813, -1.089512159058653), eric_0_70
+failed
+scene0045_00: Seed: 42, Selected_ID: 6, accepted after 0 times, dx, dy=(0.0, 0.0), eric_5_27
+scene0045_01: Seed: 42, Selected_ID: 9, accepted after 1 times, dx, dy=(-0.6624277557414003, 2.644445942723642), eric_10_93
+scene0046_00: Seed: 42, Selected_ID: 20, accepted after 50 times, dx, dy=(-0.811687240415101, -1.4094625015324374), eric_30_1
+scene0046_01: Seed: 42, Selected_ID: 37, accepted after 29 times, dx, dy=(-0.6609521156866419, -1.2124073524124073), eric_30_68
+scene0046_02: Seed: 42, Selected_ID: 50, accepted after 29 times, dx, dy=(-0.727011135548473, -1.1277856310591137), eric_0_53
+scene0047_00: Seed: 42, Selected_ID: 4, accepted after 10 times, dx, dy=(-0.22156966934372602, -1.2622215881871928), eric_15_39
+scene0048_00: Seed: 42, Selected_ID: 10, accepted after 1 times, dx, dy=(0.8606085827656632, 1.7484921820580743), eric_15_16
+scene0048_01: Seed: 42, Selected_ID: 20, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_28
+scene0049_00: Seed: 42, Selected_ID: 19, accepted after 1 times, dx, dy=(-0.4461955234138977, 1.5215763087783023), eric_10_85
+scene0050_00: Seed: 42, Selected_ID: 9, accepted after 7 times, dx, dy=(0.8527126160346786, -1.3459247290115648), eric_5_60
+scene0050_01: Seed: 42, Selected_ID: 11, accepted after 3 times, dx, dy=(-1.1441764896317448, -1.0853883116202327), eric_25_49
+scene0050_02: Seed: 42, Selected_ID: 31, accepted after 7 times, dx, dy=(0.8340103191451255, -1.01984051074925), eric_30_96
+scene0051_00: Seed: 42, Selected_ID: 46, accepted after 18 times, dx, dy=(1.714420956440101, 2.2371679297204587), eric_10_21
+scene0051_01: Seed: 42, Selected_ID: 20, accepted after 4 times, dx, dy=(-2.7986105318574896, 1.3831714489522817), eric_20_14
+scene0051_02: Seed: 42, Selected_ID: 20, accepted after 2 times, dx, dy=(0.448884252080059, 0.15976496065404416), eric_10_49
+scene0051_03: Seed: 42, Selected_ID: 42, accepted after 2 times, dx, dy=(0.45013807217030777, 0.1078208725951842), eric_10_11
+scene0052_00: Seed: 42, Selected_ID: 13, accepted after 1 times, dx, dy=(-0.147109238832709, 1.4547802980123985), eric_30_8
+scene0052_01: Seed: 42, Selected_ID: 15, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_60
+scene0052_02: Seed: 42, Selected_ID: 8, accepted after 0 times, dx, dy=(0.0, 0.0), eric_5_81
+scene0053_00: Seed: 42, Selected_ID: 7, accepted after 2 times, dx, dy=(1.2605440562772166, -0.14194966336817955), eric_15_55
+scene0054_00: Seed: 42, Selected_ID: 81, accepted after 1 times, dx, dy=(-0.35038257887910096, 3.4231000157366993), eric_10_96
+scene0055_00: Seed: 42, Selected_ID: 13, accepted after 1 times, dx, dy=(-0.39418578600931775, 1.1202794661885582), eric_5_91
+scene0055_01: Seed: 42, Selected_ID: 14, accepted after 1 times, dx, dy=(-0.3837532079966913, 1.058355047562537), eric_0_63
+failed
+scene0056_00: Seed: 42, Selected_ID: 17, accepted after 5 times, dx, dy=(0.311619813874373, 1.1516733124454175), eric_15_93
+scene0056_01: Seed: 42, Selected_ID: 18, accepted after 0 times, dx, dy=(0.0, 0.0), eric_0_60
+failed
+scene0057_01: Seed: 42, Selected_ID: 18, accepted after 0 times, dx, dy=(0.0, 0.0), eric_0_94
+scene0058_00: Seed: 42, Selected_ID: 11, accepted after 13 times, dx, dy=(-0.1558902614938199, 1.6065951199346398), eric_20_58
+scene0058_01: Seed: 42, Selected_ID: 21, accepted after 5 times, dx, dy=(0.054817391340623245, 1.1788489809457257), eric_20_42
+scene0059_00: Seed: 42, Selected_ID: 18, accepted after 13 times, dx, dy=(-0.1300716653032329, 1.554408823584707), eric_25_57
+scene0059_01: Seed: 42, Selected_ID: 39, accepted after 11 times, dx, dy=(0.4022730719423232, -1.940438886551689), eric_15_10
+scene0059_02: Seed: 42, Selected_ID: 10, accepted after 6 times, dx, dy=(-1.6898309824280089, 1.939935222315593), eric_20_48
+scene0060_00: Seed: 42, Selected_ID: 21, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_56
+scene0060_01: Seed: 42, Selected_ID: 6, accepted after 3 times, dx, dy=(-1.889405622613431, -2.052039160122974), eric_25_17
+scene0061_00: Seed: 42, Selected_ID: 17, accepted after 4 times, dx, dy=(-2.2690546135798986, 2.7643159056570457), eric_10_93
+scene0061_01: Seed: 42, Selected_ID: 2, accepted after 3 times, dx, dy=(-1.0597270010766398, -2.161795294572154), eric_5_91
+scene0062_00: Seed: 42, Selected_ID: 9, accepted after 2 times, dx, dy=(0.11844496879394018, 0.1355250338390877), eric_30_14
+scene0062_01: Seed: 42, Selected_ID: 5, accepted after 0 times, dx, dy=(0.0, 0.0), eric_5_76
+scene0062_02: Seed: 42, Selected_ID: 17, accepted after 0 times, dx, dy=(0.0, 0.0), eric_30_24
+scene0063_00: Seed: 42, Selected_ID: 11, accepted after 6 times, dx, dy=(-2.3720851203529936, 1.549377837823237), eric_10_25
+scene0064_00: Seed: 42, Selected_ID: 31, accepted after 1 times, dx, dy=(-1.2625435386612862, 2.7474578279585926), eric_0_98
+scene0064_01: Seed: 42, Selected_ID: 53, accepted after 1 times, dx, dy=(-1.1038248792059857, 2.3555919466622854), eric_15_28
+scene0065_00: Seed: 42, Selected_ID: 10, accepted after 1 times, dx, dy=(-0.47457853635312874, 1.9590134083046757), eric_15_3
+scene0065_01: Seed: 42, Selected_ID: 14, accepted after 2 times, dx, dy=(0.8870372019377942, -0.6790000785716356), eric_30_68
+scene0065_02: Seed: 42, Selected_ID: 11, accepted after 2 times, dx, dy=(0.68082610324802, -0.48262508915447117), eric_30_6
+scene0066_00: Seed: 42, Selected_ID: 34, accepted after 1 times, dx, dy=(-0.5926868265058053, 3.1585625586137636), eric_5_27
+scene0067_00: Seed: 42, Selected_ID: 11, accepted after 0 times, dx, dy=(0.0, 0.0), eric_25_89
+scene0067_01: Seed: 42, Selected_ID: 1, accepted after 0 times, dx, dy=(0.0, 0.0), eric_20_81
+scene0067_02: Seed: 42, Selected_ID: 16, accepted after 0 times, dx, dy=(0.0, 0.0), eric_30_20
+scene0068_00: Seed: 42, Selected_ID: 35, accepted after 15 times, dx, dy=(-0.488245237581718, -0.35714476593278494), eric_-15_72
+scene0068_01: Seed: 42, Selected_ID: 23, accepted after 2 times, dx, dy=(-0.3635162764982447, 0.039176204777059034), eric_15_12
+NO SUIT ERIC! Using default
+scene0069_00: Seed: 42, Selected_ID: 10, accepted after 10000 times, dx, dy=(-1.0533730729782365, 2.220074988080976), eric_0_79
+scene0070_00: Seed: 42, Selected_ID: 3, accepted after 3 times, dx, dy=(-0.35756864223712825, -1.4609712676243454), eric_-10_20
+scene0071_00: Seed: 42, Selected_ID: 3, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_51
+failed
+scene0072_01: Seed: 42, Selected_ID: 12, accepted after 3 times, dx, dy=(-0.14717614719748828, -1.233948202594576), eric_-15_27
+failed
+scene0073_00: Seed: 42, Selected_ID: 18, accepted after 0 times, dx, dy=(0.0, 0.0), eric_20_95
+scene0073_01: Seed: 42, Selected_ID: 2, accepted after 10 times, dx, dy=(-0.18071557785408265, -0.699462159377825), eric_5_9
+scene0073_02: Seed: 42, Selected_ID: 7, accepted after 0 times, dx, dy=(0.0, 0.0), eric_20_59
+scene0073_03: Seed: 42, Selected_ID: 24, accepted after 0 times, dx, dy=(0.0, 0.0), eric_0_94
+failed
+failed
+failed
+scene0075_00: Seed: 42, Selected_ID: 3, accepted after 20 times, dx, dy=(0.8964586222626204, -0.23589249472404628), eric_25_14
+scene0076_00: Seed: 42, Selected_ID: 22, accepted after 4 times, dx, dy=(-2.0390573432492394, 2.1933915284439087), eric_5_5
+scene0077_00: Seed: 42, Selected_ID: 7, accepted after 10 times, dx, dy=(0.2677842084895524, -1.2161885576992764), eric_15_77
+scene0077_01: Seed: 42, Selected_ID: 13, accepted after 18 times, dx, dy=(0.6926967341315103, 1.5144358746523443), eric_25_21
+scene0078_00: Seed: 42, Selected_ID: 2, accepted after 8 times, dx, dy=(-1.1609545707251048, -0.4389530792265432), eric_5_43
+scene0078_01: Seed: 42, Selected_ID: 16, accepted after 0 times, dx, dy=(0.0, 0.0), eric_30_14
+scene0078_02: Seed: 42, Selected_ID: 1, accepted after 3 times, dx, dy=(-1.0761716410142865, -0.6349236192979424), eric_10_77
+scene0079_00: Seed: 42, Selected_ID: 9, accepted after 0 times, dx, dy=(0.0, 0.0), eric_25_63
+scene0079_01: Seed: 42, Selected_ID: 10, accepted after 1 times, dx, dy=(-0.5626141568986812, 4.7902531718336565), eric_20_69
+scene0080_00: Seed: 42, Selected_ID: 5, accepted after 15 times, dx, dy=(0.11409929761817372, -0.7650558608236105), eric_20_55
+scene0080_01: Seed: 42, Selected_ID: 20, accepted after 2 times, dx, dy=(0.17693199731896447, -0.40597962278036576), eric_30_22
+scene0080_02: Seed: 42, Selected_ID: 5, accepted after 1 times, dx, dy=(-0.10486507231091274, 0.8273630053235472), eric_5_62
+scene0081_00: Seed: 42, Selected_ID: 6, accepted after 4 times, dx, dy=(-1.9615149956933213, 1.8920636596971485), eric_15_83
+scene0081_01: Seed: 42, Selected_ID: 10, accepted after 13 times, dx, dy=(0.046162666794089424, 2.3686242182590402), eric_10_32
+scene0081_02: Seed: 42, Selected_ID: 1, accepted after 1 times, dx, dy=(-1.1864564932336688, 3.6844285021835703), eric_5_39
+scene0082_00: Seed: 42, Selected_ID: 9, accepted after 1 times, dx, dy=(-0.5291575859743473, 3.1465195214989463), eric_10_21
+failed
+failed
+scene0084_00: Seed: 42, Selected_ID: 29, accepted after 1 times, dx, dy=(-0.5972698136165749, 1.1232661890963522), eric_30_34
+scene0084_01: Seed: 42, Selected_ID: 14, accepted after 1 times, dx, dy=(-0.6097019884551139, 1.3938244841521745), eric_15_99
+scene0084_02: Seed: 42, Selected_ID: 38, accepted after 1 times, dx, dy=(-0.26772153716397507, 1.3546426878175977), eric_10_6
+scene0085_00: Seed: 42, Selected_ID: 36, accepted after 2 times, dx, dy=(0.8981809331549558, 0.4346496732241543), eric_5_86
+scene0085_01: Seed: 42, Selected_ID: 5, accepted after 1 times, dx, dy=(-0.5539112262993208, 2.3380996086395824), eric_25_14
+scene0086_00: Seed: 42, Selected_ID: 6, accepted after 1 times, dx, dy=(0.16822012388045238, 1.9100965443311868), eric_0_50
+scene0086_01: Seed: 42, Selected_ID: 5, accepted after 1 times, dx, dy=(0.17335128602229377, 1.817600385155692), eric_5_82
+scene0086_02: Seed: 42, Selected_ID: 6, accepted after 1 times, dx, dy=(0.1465119163212013, 1.8222596967383151), eric_5_37
+scene0087_00: Seed: 42, Selected_ID: 13, accepted after 3 times, dx, dy=(-1.0030522360192315, -1.713099058007438), eric_20_41
+scene0087_01: Seed: 42, Selected_ID: 15, accepted after 2 times, dx, dy=(1.036384484895767, 0.02701744019236181), eric_15_73
+scene0087_02: Seed: 42, Selected_ID: 7, accepted after 0 times, dx, dy=(0.0, 0.0), eric_10_17
+scene0088_00: Seed: 42, Selected_ID: 1, accepted after 19 times, dx, dy=(-0.9247847129633872, -1.5804020151774671), eric_30_70
+scene0088_01: Seed: 42, Selected_ID: 15, accepted after 7 times, dx, dy=(1.6933410298900076, -1.8675073769203132), eric_15_27
+scene0088_02: Seed: 42, Selected_ID: 12, accepted after 4 times, dx, dy=(-2.5155815063570452, 2.1584615980049517), eric_5_91
+scene0088_03: Seed: 42, Selected_ID: 23, accepted after 3 times, dx, dy=(-1.6518679771784677, -1.4493781891376956), eric_5_54
+scene0089_00: Seed: 42, Selected_ID: 1, accepted after 2 times, dx, dy=(0.36451825029001317, 0.37193319432483923), eric_20_3
+scene0089_01: Seed: 42, Selected_ID: 17, accepted after 2 times, dx, dy=(0.44695540583112947, 0.6302551796472536), eric_5_65
+scene0089_02: Seed: 42, Selected_ID: 15, accepted after 2 times, dx, dy=(0.36598723197308025, 0.5061466446905004), eric_15_56
+scene0090_00: Seed: 42, Selected_ID: 8, accepted after 1 times, dx, dy=(0.1921202286768079, 1.2872347483232476), eric_10_32
+scene0091_00: Seed: 42, Selected_ID: 2, accepted after 1 times, dx, dy=(-0.14389646921949661, 1.9088501172279562), eric_15_64
+scene0092_00: Seed: 42, Selected_ID: 6, accepted after 12 times, dx, dy=(-0.5257449213233801, -1.2633460686022135), eric_30_29
+scene0092_01: Seed: 42, Selected_ID: 34, accepted after 10 times, dx, dy=(-0.10456707916618535, -1.528805331353715), eric_25_4
+scene0092_02: Seed: 42, Selected_ID: 5, accepted after 12 times, dx, dy=(-0.5641942750117497, -1.1454671719685707), eric_15_12
+scene0092_03: Seed: 42, Selected_ID: 85, accepted after 7 times, dx, dy=(1.1823116524263715, -2.687007242096733), eric_30_77
+scene0092_04: Seed: 42, Selected_ID: 49, accepted after 0 times, dx, dy=(0.0, 0.0), eric_30_46
+scene0093_00: Seed: 42, Selected_ID: 13, accepted after 7 times, dx, dy=(1.0081134365815458, -1.3388896089398188), eric_0_17
+scene0093_01: Seed: 42, Selected_ID: 2, accepted after 15 times, dx, dy=(0.29178481250564026, -1.7288582140328135), eric_15_52
+scene0093_02: Seed: 42, Selected_ID: 11, accepted after 15 times, dx, dy=(0.15305152149450196, -1.8040917731703334), eric_5_37
+scene0094_00: Seed: 42, Selected_ID: 18, accepted after 8 times, dx, dy=(-0.33066453845854626, -1.5443509710978838), eric_30_44
+scene0095_00: Seed: 42, Selected_ID: 33, accepted after 4 times, dx, dy=(-1.1276236027931898, 3.030718878023768), eric_10_43
+scene0095_01: Seed: 42, Selected_ID: 25, accepted after 1 times, dx, dy=(-0.4788792135865002, 2.795361072492787), eric_15_67
+failed
+scene0096_01: Seed: 42, Selected_ID: 25, accepted after 3 times, dx, dy=(-0.6806764831300051, -0.8144042783138135), eric_25_71
+scene0096_02: Seed: 42, Selected_ID: 21, accepted after 1 times, dx, dy=(-0.4173579524445553, 1.1109203308229219), eric_10_54
+scene0097_00: Seed: 42, Selected_ID: 5, accepted after 0 times, dx, dy=(0.0, 0.0), eric_20_63
+failed
+scene0098_01: Seed: 42, Selected_ID: 43, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_21
+scene0099_00: Seed: 42, Selected_ID: 9, accepted after 1 times, dx, dy=(-0.2989139881536963, 0.6735669225217608), eric_20_23
+scene0099_01: Seed: 42, Selected_ID: 2, accepted after 1 times, dx, dy=(-0.12250383406428067, 0.9391320029048081), eric_15_78
+scene0100_00: Seed: 42, Selected_ID: 23, accepted after 1 times, dx, dy=(-0.3002168699712241, 0.035444348316087185), eric_20_30
+failed
+failed
+scene0101_00: Seed: 42, Selected_ID: 84, accepted after 2 times, dx, dy=(0.7309827621394062, 0.15252956476878526), eric_15_44
+scene0101_01: Seed: 42, Selected_ID: 44, accepted after 5 times, dx, dy=(0.21464498856807246, 0.9082215100505276), eric_10_66
+scene0101_02: Seed: 42, Selected_ID: 53, accepted after 2 times, dx, dy=(0.7383326893266776, 0.3525571172430049), eric_10_3
+scene0101_03: Seed: 42, Selected_ID: 6, accepted after 0 times, dx, dy=(0.0, 0.0), eric_0_60
+scene0101_04: Seed: 42, Selected_ID: 30, accepted after 48 times, dx, dy=(0.9529487477633912, -0.375748056596856), eric_30_96
+scene0101_05: Seed: 42, Selected_ID: 52, accepted after 0 times, dx, dy=(0.0, 0.0), eric_0_78
+scene0102_00: Seed: 42, Selected_ID: 30, accepted after 10 times, dx, dy=(-0.33939553377254417, -2.0210353886997177), eric_0_4
+scene0102_01: Seed: 42, Selected_ID: 19, accepted after 5 times, dx, dy=(0.3306379118841768, 2.5080002872617495), eric_15_15
+scene0103_00: Seed: 42, Selected_ID: 11, accepted after 7 times, dx, dy=(1.4870144950813051, -0.7173666706477732), eric_25_47
+NO SUIT ERIC! Using default
+scene0103_01: Seed: 42, Selected_ID: 1, accepted after 10000 times, dx, dy=(-1.6102462804881448, -0.3501753343433865), eric_0_28
+scene0104_00: Seed: 42, Selected_ID: 23, accepted after 1 times, dx, dy=(-0.3142851250478852, 0.9485270868650008), eric_25_6
+NO SUIT ERIC! Using default
+scene0105_00: Seed: 42, Selected_ID: 5, accepted after 10000 times, dx, dy=(-0.6788235516548157, 0.7398634130892424), eric_0_63
+NO SUIT ERIC! Using default
+scene0105_01: Seed: 42, Selected_ID: 1, accepted after 10000 times, dx, dy=(-0.49667099415593546, 0.6844799105130024), eric_0_69
+NO SUIT ERIC! Using default
+scene0105_02: Seed: 42, Selected_ID: 15, accepted after 10000 times, dx, dy=(-0.4521891052456027, 0.6994519138837392), eric_0_70
+scene0106_00: Seed: 42, Selected_ID: 14, accepted after 11 times, dx, dy=(0.2933924896004937, -3.3186973282712393), eric_25_88
+scene0106_01: Seed: 42, Selected_ID: 21, accepted after 1 times, dx, dy=(-0.5677049342292567, 4.316058561851405), eric_0_70
+scene0106_02: Seed: 42, Selected_ID: 20, accepted after 27 times, dx, dy=(1.5349998429086291, 2.91006861284693), eric_5_6
+scene0107_00: Seed: 42, Selected_ID: 11, accepted after 6 times, dx, dy=(-1.179943067956303, 2.9614869617066577), eric_10_70
+scene0108_00: Seed: 42, Selected_ID: 16, accepted after 2 times, dx, dy=(0.6342535874060019, 0.47016475402630703), eric_30_37
+scene0109_00: Seed: 42, Selected_ID: 15, accepted after 0 times, dx, dy=(0.0, 0.0), eric_10_60
+scene0109_01: Seed: 42, Selected_ID: 19, accepted after 0 times, dx, dy=(0.0, 0.0), eric_25_10
+scene0110_00: Seed: 42, Selected_ID: 6, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_76
+scene0110_01: Seed: 42, Selected_ID: 31, accepted after 0 times, dx, dy=(0.0, 0.0), eric_5_51
+scene0110_02: Seed: 42, Selected_ID: 15, accepted after 0 times, dx, dy=(0.0, 0.0), eric_25_40
+scene0111_00: Seed: 42, Selected_ID: 38, accepted after 2 times, dx, dy=(0.9155126402310668, -0.017257408750316713), eric_5_33
+scene0111_01: Seed: 42, Selected_ID: 41, accepted after 1 times, dx, dy=(-0.20285649428393426, 2.1741578536002932), eric_5_72
+scene0111_02: Seed: 42, Selected_ID: 39, accepted after 1 times, dx, dy=(-0.21719515931606292, 3.17122336769104), eric_0_79
+NO SUIT ERIC! Using default
+scene0112_00: Seed: 42, Selected_ID: 3, accepted after 10000 times, dx, dy=(-0.08265786945940995, -0.6236349514746672), eric_0_26
+scene0112_01: Seed: 42, Selected_ID: 18, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_11
+scene0112_02: Seed: 42, Selected_ID: 15, accepted after 0 times, dx, dy=(0.0, 0.0), eric_20_49
+scene0113_00: Seed: 42, Selected_ID: 9, accepted after 1 times, dx, dy=(-0.10824055713634995, 2.0945328480319145), eric_5_98
+scene0113_01: Seed: 42, Selected_ID: 4, accepted after 1 times, dx, dy=(-0.9083254498103203, 1.09080784251296), eric_20_94
+scene0114_00: Seed: 42, Selected_ID: 12, accepted after 204 times, dx, dy=(0.11721367055571963, -1.9312235137610048), eric_20_78
+scene0114_01: Seed: 42, Selected_ID: 3, accepted after 1 times, dx, dy=(-0.014567297927508105, 2.2298638868639897), eric_10_16
+scene0114_02: Seed: 42, Selected_ID: 27, accepted after 185 times, dx, dy=(-0.894947082016713, -1.7014547602838033), eric_30_89
+scene0115_00: Seed: 42, Selected_ID: 6, accepted after 1 times, dx, dy=(-0.5607146528653578, 2.949024152223289), eric_5_81
+scene0115_01: Seed: 42, Selected_ID: 10, accepted after 1 times, dx, dy=(-0.9163220024855131, 3.841089184827242), eric_5_75
+scene0115_02: Seed: 42, Selected_ID: 16, accepted after 0 times, dx, dy=(0.0, 0.0), eric_10_61
+scene0116_00: Seed: 42, Selected_ID: 24, accepted after 3 times, dx, dy=(-0.5784554757979085, -1.425939147520763), eric_0_94
+scene0116_01: Seed: 42, Selected_ID: 17, accepted after 3 times, dx, dy=(-0.7800992711108629, -1.0917635689810379), eric_5_87
+scene0116_02: Seed: 42, Selected_ID: 26, accepted after 2 times, dx, dy=(0.6344217076453202, 0.6099435452302694), eric_30_86
+scene0117_00: Seed: 42, Selected_ID: 31, accepted after 1 times, dx, dy=(0.12368315914499328, 1.82457048149041), eric_0_59
+scene0118_00: Seed: 42, Selected_ID: 8, accepted after 0 times, dx, dy=(0.0, 0.0), eric_-15_14
+scene0118_01: Seed: 42, Selected_ID: 6, accepted after 0 times, dx, dy=(0.0, 0.0), eric_0_81
+scene0118_02: Seed: 42, Selected_ID: 13, accepted after 0 times, dx, dy=(0.0, 0.0), eric_0_15
+scene0119_00: Seed: 42, Selected_ID: 17, accepted after 13 times, dx, dy=(-0.38057470347320965, -0.4838071796627624), eric_-10_54
+scene0120_00: Seed: 42, Selected_ID: 21, accepted after 4 times, dx, dy=(-0.5765333808034847, 1.5396383967937421), eric_0_14
+scene0120_01: Seed: 42, Selected_ID: 13, accepted after 4 times, dx, dy=(-0.47800868589273326, 1.7406082116137915), eric_0_5
+NO SUIT ERIC! Using default
+scene0121_00: Seed: 42, Selected_ID: 5, accepted after 10000 times, dx, dy=(-0.18498998480747747, -0.7068163178364516), eric_0_94
+NO SUIT ERIC! Using default
+scene0121_01: Seed: 42, Selected_ID: 27, accepted after 10000 times, dx, dy=(0.19268869079060424, 0.8748621964868551), eric_0_77
+scene0121_02: Seed: 42, Selected_ID: 12, accepted after 0 times, dx, dy=(0.0, 0.0), eric_0_75
+scene0122_00: Seed: 42, Selected_ID: 6, accepted after 4 times, dx, dy=(-0.816129142571476, 0.9447640836508916), eric_30_32
+scene0122_01: Seed: 42, Selected_ID: 11, accepted after 4 times, dx, dy=(-0.7913589692291361, 0.8775284806155635), eric_25_66
+scene0123_00: Seed: 42, Selected_ID: 22, accepted after 0 times, dx, dy=(0.0, 0.0), eric_20_99
+scene0123_01: Seed: 42, Selected_ID: 7, accepted after 0 times, dx, dy=(0.0, 0.0), eric_5_27
+scene0123_02: Seed: 42, Selected_ID: 9, accepted after 0 times, dx, dy=(0.0, 0.0), eric_20_12
+scene0124_00: Seed: 42, Selected_ID: 22, accepted after 3 times, dx, dy=(-0.5062184226882208, -0.3624108359745437), eric_25_29
+scene0124_01: Seed: 42, Selected_ID: 19, accepted after 3 times, dx, dy=(-0.5633080839816048, -0.513085206596371), eric_30_63
+scene0125_00: Seed: 42, Selected_ID: 6, accepted after 3 times, dx, dy=(-1.8786555469079849, -1.9501007346972188), eric_15_6
+scene0126_00: Seed: 42, Selected_ID: 37, accepted after 7 times, dx, dy=(0.8022906242160729, -1.1596054632199178), eric_15_60
+scene0126_01: Seed: 42, Selected_ID: 23, accepted after 30 times, dx, dy=(-1.002828872019255, -0.44455975277565524), eric_20_4
+scene0126_02: Seed: 42, Selected_ID: 21, accepted after 30 times, dx, dy=(-0.9953995162992689, -0.7056401728775009), eric_5_75
+scene0127_00: Seed: 42, Selected_ID: 24, accepted after 0 times, dx, dy=(0.0, 0.0), eric_5_31
+scene0127_01: Seed: 42, Selected_ID: 1, accepted after 0 times, dx, dy=(0.0, 0.0), eric_5_65
+scene0128_00: Seed: 42, Selected_ID: 8, accepted after 4 times, dx, dy=(-0.8043666266805498, 1.4958677978845725), eric_25_18
+scene0129_00: Seed: 42, Selected_ID: 26, accepted after 0 times, dx, dy=(0.0, 0.0), eric_10_74
+scene0130_00: Seed: 42, Selected_ID: 5, accepted after 1 times, dx, dy=(-0.09747870682550996, 1.5802980998325806), eric_20_25
+scene0131_00: Seed: 42, Selected_ID: 42, accepted after 4 times, dx, dy=(-1.8004987494566635, 2.2024318480304186), eric_15_16
+scene0131_01: Seed: 42, Selected_ID: 23, accepted after 18 times, dx, dy=(1.814898104763516, 2.112385513657649), eric_30_61
+scene0131_02: Seed: 42, Selected_ID: 23, accepted after 7 times, dx, dy=(1.8659065366204315, -1.5759418441790394), eric_15_53
+scene0132_00: Seed: 42, Selected_ID: 18, accepted after 7 times, dx, dy=(1.6600611289557747, -2.9350005827220973), eric_0_22
+scene0132_01: Seed: 42, Selected_ID: 11, accepted after 1 times, dx, dy=(-2.4225503310041963, 1.5236738364835027), eric_20_26
+scene0132_02: Seed: 42, Selected_ID: 12, accepted after 3 times, dx, dy=(-1.053667672553471, -3.3946378631867984), eric_10_53
+scene0133_00: Seed: 42, Selected_ID: 1, accepted after 4 times, dx, dy=(-0.716241520261434, 2.32569119740964), eric_25_71
+scene0134_00: Seed: 42, Selected_ID: 16, accepted after 4 times, dx, dy=(-1.9092081680703488, 1.3667590267735499), eric_20_20
+scene0134_01: Seed: 42, Selected_ID: 13, accepted after 4 times, dx, dy=(-1.8730580287760135, 0.5353048322889896), eric_25_89
+scene0134_02: Seed: 42, Selected_ID: 3, accepted after 6 times, dx, dy=(-1.709686893330041, 0.7979718407650304), eric_15_9
+scene0135_00: Seed: 42, Selected_ID: 1, accepted after 18 times, dx, dy=(1.3928112419183272, 0.05291778257311648), eric_20_20
+scene0136_00: Seed: 42, Selected_ID: 27, accepted after 5 times, dx, dy=(0.36296622116224486, 0.09512613922772924), eric_0_7
+failed
+NO SUIT ERIC! Using default
+scene0136_02: Seed: 42, Selected_ID: 5, accepted after 10000 times, dx, dy=(-0.47150611779026563, -2.141320875493837), eric_0_14
+scene0137_00: Seed: 42, Selected_ID: 15, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_16
+scene0137_01: Seed: 42, Selected_ID: 20, accepted after 2 times, dx, dy=(0.5180398813973753, 0.22598279420711737), eric_0_50
+scene0137_02: Seed: 42, Selected_ID: 4, accepted after 2 times, dx, dy=(0.5184875584333198, 0.6839659204750851), eric_25_85
+scene0138_00: Seed: 42, Selected_ID: 37, accepted after 3 times, dx, dy=(-1.5016165352159212, -3.3819357687797464), eric_5_65
+scene0139_00: Seed: 42, Selected_ID: 20, accepted after 7 times, dx, dy=(0.8429310367228536, -0.7487802697876603), eric_0_16
+scene0140_00: Seed: 42, Selected_ID: 5, accepted after 1 times, dx, dy=(-0.4757952536377069, 3.378558699837843), eric_10_53
+scene0140_01: Seed: 42, Selected_ID: 1, accepted after 11 times, dx, dy=(0.3933840607144149, -2.7169707975036537), eric_0_7
+scene0141_00: Seed: 42, Selected_ID: 6, accepted after 35 times, dx, dy=(-0.9695137460500255, 2.3273905874734235), eric_5_5
+scene0141_01: Seed: 42, Selected_ID: 64, accepted after 163 times, dx, dy=(0.7972759498521743, 0.9765226557901107), eric_15_39
+scene0141_02: Seed: 42, Selected_ID: 21, accepted after 30 times, dx, dy=(-0.8221742091843801, -0.7177304387275386), eric_30_92
+scene0142_00: Seed: 42, Selected_ID: 31, accepted after 0 times, dx, dy=(0.0, 0.0), eric_-10_44
+NO SUIT ERIC! Using default
+scene0142_01: Seed: 42, Selected_ID: 28, accepted after 10000 times, dx, dy=(-1.7858032728592508, -0.15437111755738314), eric_0_37
+failed
+scene0143_01: Seed: 42, Selected_ID: 12, accepted after 18 times, dx, dy=(1.3002281042264765, 2.1092778755374018), eric_10_9
+scene0143_02: Seed: 42, Selected_ID: 29, accepted after 3 times, dx, dy=(-0.9316921459517385, -1.8702546985803128), eric_5_67
+scene0144_00: Seed: 42, Selected_ID: 12, accepted after 0 times, dx, dy=(0.0, 0.0), eric_0_22
+scene0144_01: Seed: 42, Selected_ID: 22, accepted after 9 times, dx, dy=(-0.9492362437979429, 0.04675631562054934), eric_10_75
+scene0145_00: Seed: 42, Selected_ID: 13, accepted after 1 times, dx, dy=(0.01766233927780314, 2.8432176777559017), eric_5_22
+scene0146_00: Seed: 42, Selected_ID: 1, accepted after 0 times, dx, dy=(0.0, 0.0), eric_25_52
+scene0146_01: Seed: 42, Selected_ID: 6, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_56
+scene0146_02: Seed: 42, Selected_ID: 9, accepted after 0 times, dx, dy=(0.0, 0.0), eric_10_89
+scene0147_00: Seed: 42, Selected_ID: 10, accepted after 3 times, dx, dy=(-0.8657661796549648, -1.130920712893875), eric_25_69
+scene0147_01: Seed: 42, Selected_ID: 13, accepted after 6 times, dx, dy=(-1.306207501189125, 2.2749856347097137), eric_10_26
+scene0148_00: Seed: 42, Selected_ID: 2, accepted after 1 times, dx, dy=(-0.7547539856787279, 2.8359591770116457), eric_5_19
+scene0149_00: Seed: 42, Selected_ID: 22, accepted after 10 times, dx, dy=(-0.3228650233545628, -0.8906343689430432), eric_5_36
+scene0150_00: Seed: 42, Selected_ID: 4, accepted after 19 times, dx, dy=(-0.7787477227786732, -1.7813681204340155), eric_5_56
+scene0150_01: Seed: 42, Selected_ID: 5, accepted after 3 times, dx, dy=(-1.7852122872612917, -1.623662003585975), eric_0_90
+failed
+scene0151_00: Seed: 42, Selected_ID: 1, accepted after 1 times, dx, dy=(-1.0341166010994085, 3.009384711894517), eric_0_48
+scene0151_01: Seed: 42, Selected_ID: 3, accepted after 2 times, dx, dy=(1.1532784441127593, 1.3513854087542445), eric_15_34
+scene0152_00: Seed: 42, Selected_ID: 2, accepted after 0 times, dx, dy=(0.0, 0.0), eric_0_44
+scene0152_01: Seed: 42, Selected_ID: 44, accepted after 0 times, dx, dy=(0.0, 0.0), eric_0_0
+scene0152_02: Seed: 42, Selected_ID: 45, accepted after 0 times, dx, dy=(0.0, 0.0), eric_10_85
+scene0153_00: Seed: 42, Selected_ID: 21, accepted after 3 times, dx, dy=(-0.5441031613026038, -0.3843970008345167), eric_-10_13
+scene0153_01: Seed: 42, Selected_ID: 23, accepted after 0 times, dx, dy=(0.0, 0.0), eric_10_32
+NO SUIT ERIC! Using default
+scene0154_00: Seed: 42, Selected_ID: 6, accepted after 10000 times, dx, dy=(0.25712939311911853, 2.2856299927802626), eric_0_18
+scene0155_00: Seed: 42, Selected_ID: 10, accepted after 0 times, dx, dy=(0.0, 0.0), eric_10_36
+scene0155_01: Seed: 42, Selected_ID: 18, accepted after 0 times, dx, dy=(0.0, 0.0), eric_5_73
+scene0155_02: Seed: 42, Selected_ID: 14, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_77
+scene0156_00: Seed: 42, Selected_ID: 16, accepted after 11 times, dx, dy=(1.0073376125844606, -1.1095713203539121), eric_5_29
+scene0157_00: Seed: 42, Selected_ID: 15, accepted after 0 times, dx, dy=(0.0, 0.0), eric_25_8
+scene0157_01: Seed: 42, Selected_ID: 16, accepted after 95 times, dx, dy=(0.11806023868865512, -0.41228432685413235), eric_25_97
+scene0158_00: Seed: 42, Selected_ID: 2, accepted after 12 times, dx, dy=(-0.006705290536995451, -0.6329494057149471), eric_25_57
+scene0158_01: Seed: 42, Selected_ID: 12, accepted after 0 times, dx, dy=(0.0, 0.0), eric_-5_90
+scene0158_02: Seed: 42, Selected_ID: 20, accepted after 335 times, dx, dy=(-0.08598078061125985, -0.9869783469721648), eric_-15_14
+scene0159_00: Seed: 42, Selected_ID: 14, accepted after 0 times, dx, dy=(0.0, 0.0), eric_5_7
+scene0160_00: Seed: 42, Selected_ID: 17, accepted after 18 times, dx, dy=(2.9866409849396875, 1.2023613251667757), eric_10_83
+scene0160_01: Seed: 42, Selected_ID: 6, accepted after 18 times, dx, dy=(1.827753277097302, 0.5839407972093186), eric_15_13
+failed
+scene0160_03: Seed: 42, Selected_ID: 6, accepted after 1 times, dx, dy=(-0.02745497420129872, 1.3849188187073456), eric_20_35
+scene0160_04: Seed: 42, Selected_ID: 12, accepted after 42 times, dx, dy=(-1.387265465931046, -1.2367318598652246), eric_15_76
+scene0161_00: Seed: 42, Selected_ID: 7, accepted after 3 times, dx, dy=(-1.7429891232977712, -0.6016726643230592), eric_10_22
+NO SUIT ERIC! Using default
+scene0161_01: Seed: 42, Selected_ID: 1, accepted after 10000 times, dx, dy=(-1.7360123623908055, -0.42142978884483295), eric_0_72
+scene0161_02: Seed: 42, Selected_ID: 8, accepted after 4 times, dx, dy=(-1.6602993876218424, 0.7261339546405358), eric_25_80
+failed
+scene0163_00: Seed: 42, Selected_ID: 16, accepted after 7 times, dx, dy=(0.7988256209863253, -1.2247828309016329), eric_5_49
+scene0163_01: Seed: 42, Selected_ID: 1, accepted after 13 times, dx, dy=(-0.1311198233494536, 1.3297925408396918), eric_25_7
+NO SUIT ERIC! Using default
+scene0164_00: Seed: 42, Selected_ID: 9, accepted after 10000 times, dx, dy=(1.5064714056904673, -0.10959666047154547), eric_0_20
+scene0164_01: Seed: 42, Selected_ID: 41, accepted after 68 times, dx, dy=(1.3313074547469497, -0.05326366673214032), eric_30_13
+scene0164_02: Seed: 42, Selected_ID: 2, accepted after 3 times, dx, dy=(-0.27383160475403207, -1.0873898090770917), eric_-5_86
+scene0164_03: Seed: 42, Selected_ID: 39, accepted after 3 times, dx, dy=(-0.2825629458824684, -1.0554444288266371), eric_20_70
+scene0165_00: Seed: 42, Selected_ID: 13, accepted after 1 times, dx, dy=(0.28763385248500606, 2.40245034936027), eric_5_78
+scene0165_01: Seed: 42, Selected_ID: 4, accepted after 1 times, dx, dy=(-0.7251881464704465, 1.3509654685742654), eric_15_98
+scene0165_02: Seed: 42, Selected_ID: 8, accepted after 0 times, dx, dy=(0.0, 0.0), eric_10_95
+scene0166_00: Seed: 42, Selected_ID: 43, accepted after 6 times, dx, dy=(-1.527141265726954, 1.4779220776334234), eric_10_86
+scene0166_01: Seed: 42, Selected_ID: 39, accepted after 5 times, dx, dy=(0.49552262297517846, 0.6641290605896771), eric_30_41
+scene0166_02: Seed: 42, Selected_ID: 24, accepted after 10 times, dx, dy=(-0.09185034131620118, -0.7225611109944159), eric_0_8
+scene0167_00: Seed: 42, Selected_ID: 12, accepted after 0 times, dx, dy=(0.0, 0.0), eric_25_52
+scene0168_00: Seed: 42, Selected_ID: 9, accepted after 3 times, dx, dy=(-0.7670339070001372, -2.1493881760250515), eric_5_98
+scene0168_01: Seed: 42, Selected_ID: 40, accepted after 25 times, dx, dy=(-0.23353911510574055, -1.4817868014957845), eric_0_78
+scene0168_02: Seed: 42, Selected_ID: 3, accepted after 3 times, dx, dy=(-0.6834098935190136, -1.4052210127569114), eric_10_2
+scene0169_00: Seed: 42, Selected_ID: 4, accepted after 4 times, dx, dy=(-1.7171244645499968, 1.9700537495015082), eric_15_16
+scene0169_01: Seed: 42, Selected_ID: 28, accepted after 4 times, dx, dy=(-1.6826875118769196, 2.0186709118019706), eric_15_83
+scene0170_00: Seed: 42, Selected_ID: 2, accepted after 2 times, dx, dy=(0.36656947095774395, -0.5901965564912148), eric_5_58
+scene0170_01: Seed: 42, Selected_ID: 1, accepted after 2 times, dx, dy=(-0.343194940170764, 0.5529633982920195), eric_10_79
+NO SUIT ERIC! Using default
+scene0170_02: Seed: 42, Selected_ID: 7, accepted after 10000 times, dx, dy=(-0.7924217536780183, 0.14368633051527413), eric_0_26
+scene0171_00: Seed: 42, Selected_ID: 2, accepted after 1 times, dx, dy=(-0.027100289338921058, 2.041279642919094), eric_5_64
+scene0171_01: Seed: 42, Selected_ID: 14, accepted after 1 times, dx, dy=(-0.9458494735524924, 2.5175049820252604), eric_15_42
+scene0172_00: Seed: 42, Selected_ID: 11, accepted after 9 times, dx, dy=(-0.47741101502129146, 0.0758584543360142), eric_20_8
+scene0172_01: Seed: 42, Selected_ID: 13, accepted after 0 times, dx, dy=(0.0, 0.0), eric_30_79
+scene0173_00: Seed: 42, Selected_ID: 1, accepted after 6 times, dx, dy=(-2.5099477986429104, 3.777137352686317), eric_10_61
+scene0173_01: Seed: 42, Selected_ID: 11, accepted after 1 times, dx, dy=(-0.3248821519908657, 2.519219714088615), eric_10_39
+scene0173_02: Seed: 42, Selected_ID: 23, accepted after 70 times, dx, dy=(0.10558023532989325, 2.6606542899231918), eric_15_54
+scene0174_00: Seed: 42, Selected_ID: 21, accepted after 189 times, dx, dy=(0.2984044879318478, -2.04448369472671), eric_30_0
+scene0174_01: Seed: 42, Selected_ID: 29, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_4
+scene0175_00: Seed: 42, Selected_ID: 25, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_56
+failed
+scene0177_00: Seed: 42, Selected_ID: 16, accepted after 1 times, dx, dy=(-0.18385941111839854, 1.7659307088335454), eric_25_0
+scene0177_01: Seed: 42, Selected_ID: 26, accepted after 1 times, dx, dy=(-0.2900598825728046, 1.717916315259948), eric_30_52
+scene0177_02: Seed: 42, Selected_ID: 18, accepted after 1 times, dx, dy=(-0.45479935616654743, 1.7039413820172868), eric_25_90
+scene0178_00: Seed: 42, Selected_ID: 25, accepted after 0 times, dx, dy=(0.0, 0.0), eric_20_53
+scene0179_00: Seed: 42, Selected_ID: 9, accepted after 4 times, dx, dy=(-1.27197460788725, 1.4521760172570037), eric_0_57
+scene0180_00: Seed: 42, Selected_ID: 25, accepted after 1 times, dx, dy=(-0.1028754036277687, 5.317247594659879), eric_0_97
+scene0181_00: Seed: 42, Selected_ID: 45, accepted after 0 times, dx, dy=(0.0, 0.0), eric_0_85
+scene0181_01: Seed: 42, Selected_ID: 19, accepted after 0 times, dx, dy=(0.0, 0.0), eric_25_57
+scene0181_02: Seed: 42, Selected_ID: 7, accepted after 2 times, dx, dy=(1.0521878060048988, 0.6815416447716632), eric_5_64
+scene0181_03: Seed: 42, Selected_ID: 5, accepted after 1 times, dx, dy=(0.14799673207331043, 2.147849010065685), eric_15_2
+scene0182_00: Seed: 42, Selected_ID: 1, accepted after 3 times, dx, dy=(-0.7374163995954132, 1.008961699812822), eric_10_55
+failed
+failed
+failed
+scene0184_00: Seed: 42, Selected_ID: 29, accepted after 5 times, dx, dy=(0.46698474375751686, 0.667884193063711), eric_25_20
+scene0185_00: Seed: 42, Selected_ID: 29, accepted after 0 times, dx, dy=(0.0, 0.0), eric_10_77
+scene0186_00: Seed: 42, Selected_ID: 21, accepted after 3 times, dx, dy=(-1.7583666344417068, -1.327260408746853), eric_10_88
+scene0186_01: Seed: 42, Selected_ID: 13, accepted after 8 times, dx, dy=(-1.9351055518704574, -1.3598348833749982), eric_10_49
+scene0187_00: Seed: 42, Selected_ID: 8, accepted after 0 times, dx, dy=(0.0, 0.0), eric_20_49
+scene0187_01: Seed: 42, Selected_ID: 7, accepted after 0 times, dx, dy=(0.0, 0.0), eric_20_12
+scene0188_00: Seed: 42, Selected_ID: 9, accepted after 15 times, dx, dy=(0.7001176960116456, -1.8085868202479158), eric_25_11
+scene0189_00: Seed: 42, Selected_ID: 23, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_31
+scene0190_00: Seed: 42, Selected_ID: 22, accepted after 3 times, dx, dy=(-0.5960246858875337, -1.619333918908208), eric_10_40
+scene0191_00: Seed: 42, Selected_ID: 6, accepted after 3 times, dx, dy=(-0.13382560960312723, -2.5782877739455974), eric_0_24
+scene0191_01: Seed: 42, Selected_ID: 11, accepted after 18 times, dx, dy=(1.3266945032257267, 1.1639621944645733), eric_20_94
+scene0191_02: Seed: 42, Selected_ID: 13, accepted after 2 times, dx, dy=(0.9741236841229307, 0.016869985338631224), eric_25_18
+scene0192_00: Seed: 42, Selected_ID: 5, accepted after 2 times, dx, dy=(1.325666944318323, 0.23353272216582593), eric_25_94
+scene0192_01: Seed: 42, Selected_ID: 4, accepted after 27 times, dx, dy=(0.3523106960975818, 1.501814746102894), eric_30_3
+scene0192_02: Seed: 42, Selected_ID: 4, accepted after 1 times, dx, dy=(0.2589173857833872, 2.07141697677874), eric_-5_40
+NO SUIT ERIC! Using default
+scene0193_00: Seed: 42, Selected_ID: 7, accepted after 10000 times, dx, dy=(-1.2097989778247982, 0.4893520597586816), eric_0_59
+scene0193_01: Seed: 42, Selected_ID: 16, accepted after 1 times, dx, dy=(-0.709774727497633, 1.947667954987944), eric_30_70
+failed
+scene0195_00: Seed: 42, Selected_ID: 28, accepted after 5 times, dx, dy=(0.03601702109694338, -0.0048410364913544085), eric_0_81
+scene0195_01: Seed: 42, Selected_ID: 2, accepted after 30 times, dx, dy=(-0.7613819242045241, -0.734951953729576), eric_10_68
+scene0195_02: Seed: 42, Selected_ID: 27, accepted after 30 times, dx, dy=(-0.8224675528394173, -0.8166551890433704), eric_15_96
+scene0196_00: Seed: 42, Selected_ID: 16, accepted after 1 times, dx, dy=(-0.24911164411430964, 2.9177750198897816), eric_10_79
+scene0197_00: Seed: 42, Selected_ID: 26, accepted after 0 times, dx, dy=(0.0, 0.0), eric_10_14
+scene0197_01: Seed: 42, Selected_ID: 12, accepted after 0 times, dx, dy=(0.0, 0.0), eric_-5_74
+scene0197_02: Seed: 42, Selected_ID: 18, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_13
+scene0198_00: Seed: 42, Selected_ID: 14, accepted after 2 times, dx, dy=(0.43957581977721505, -0.000957210424500296), eric_25_91
+scene0199_00: Seed: 42, Selected_ID: 5, accepted after 3 times, dx, dy=(-1.8877114496442178, -2.6729657732601573), eric_20_12
+scene0200_00: Seed: 42, Selected_ID: 17, accepted after 2 times, dx, dy=(0.5729373919807731, 0.2266538392927296), eric_10_29
+scene0200_01: Seed: 42, Selected_ID: 18, accepted after 3 times, dx, dy=(-0.8876099839416598, -1.0365778791095106), eric_10_38
+scene0200_02: Seed: 42, Selected_ID: 9, accepted after 3 times, dx, dy=(-0.38685885876911646, -0.9713828630132361), eric_20_53

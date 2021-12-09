@@ -1,5 +1,5 @@
-filename = 'R.txt'
+filename = 'A.txt'
 with open(filename, 'r') as f:
 	lines = f.readlines()
 	for line in lines:
-		print('python3 make_data.py --scanID {} --data_dir ../ScanNet/scans --seed 55 --visualize'.format(line.split()[1]))
+		print('cp -r ScanNet_with_eric_/{}_with_eric ScanNet_with_eric'.format(line.split()[1]))

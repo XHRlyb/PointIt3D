@@ -174,7 +174,7 @@ def main():
             # minx, maxx, miny, maxy, minz, maxz = -100, -100, -100, -100, -100, -100
             # continue
         elif vertices[seg_to_verts[object_id_to_segs[j][0]][0]][-1] == label_mapping['wall'] or vertices[seg_to_verts[object_id_to_segs[j][0]][0]][-1] == label_mapping['ceiling']:
-            print('{} is wall'.format(j))
+            0  # print('{} is wall'.format(j))
         else:
             candidate_ids.append(j)
         # print(j,minx, maxx, miny, maxy, minz, maxz)
@@ -303,7 +303,7 @@ def main():
         selected_object.points = o3d.utility.Vector3dVector(selected_pts)
         selected_object.colors = o3d.utility.Vector3dVector(selected_colors)
         bbox = selected_object.get_axis_aligned_bounding_box()
-        bbox.color = (255, 0, 0)
+        bbox.color = (1, 0, 0)
         pcds = [origin, bbox]
         o3d.visualization.draw_geometries(pcds)
 

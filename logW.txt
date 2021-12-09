@@ -1,0 +1,84 @@
+scene0005_01: Seed: 55, Selected_ID: 9, accepted after 429 times, dx, dy=(0.01202270909831541, -0.08782287205447846), eric_25_83
+scene0013_02: Seed: 55, Selected_ID: 2, accepted after 5364 times, dx, dy=(-1.0596319636888643, -0.8849178855998979), eric_20_18
+scene0017_01: Seed: 55, Selected_ID: 4, accepted after 9556 times, dx, dy=(0.8261043618209094, -1.6195592822081453), eric_20_91
+scene0027_00: Seed: 55, Selected_ID: 12, accepted after 2264 times, dx, dy=(-0.18741289970925776, 0.15712454872347648), eric_20_19
+scene0032_00: Seed: 55, Selected_ID: 2, accepted after 5222 times, dx, dy=(-0.017870062481362824, -0.4209251745912433), eric_5_68
+scene0034_02: Seed: 55, Selected_ID: 18, accepted after 3151 times, dx, dy=(0.2703910795705251, -0.3090867515544691), eric_5_80
+scene0035_01: Seed: 55, Selected_ID: 15, accepted after 0 times, dx, dy=(0.0, 0.0), eric_30_34
+scene0038_01: Seed: 55, Selected_ID: 5, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_24
+scene0039_00: Seed: 55, Selected_ID: 6, accepted after 4956 times, dx, dy=(-0.2206675906776165, 0.4633898932319652), eric_15_94
+[Open3D WARNING] [ViewControl] SetViewPoint() failed because window height and width are not set.
+scene0039_01: Seed: 55, Selected_ID: 13, accepted after 5078 times, dx, dy=(-0.3768996686564115, 0.3861849381591801), eric_30_98
+scene0045_00: Seed: 55, Selected_ID: 10, accepted after 0 times, dx, dy=(0.0, 0.0), eric_-5_48
+scene0052_02: Seed: 55, Selected_ID: 7, accepted after 0 times, dx, dy=(0.0, 0.0), eric_0_71
+scene0053_00: Seed: 55, Selected_ID: 11, accepted after 4447 times, dx, dy=(0.08306700087620991, 0.3783678198753255), eric_10_16
+scene0055_00: Seed: 55, Selected_ID: 8, accepted after 5621 times, dx, dy=(-0.39091173565400794, -0.15811652501745363), eric_15_69
+scene0055_01: Seed: 55, Selected_ID: 14, accepted after 8959 times, dx, dy=(-0.5903573232735505, -0.3107684533191056), eric_5_68
+scene0056_01: Seed: 55, Selected_ID: 31, accepted after 0 times, dx, dy=(0.0, 0.0), eric_0_64
+scene0057_01: Seed: 55, Selected_ID: 3, accepted after 0 times, dx, dy=(0.0, 0.0), eric_20_72
+[Open3D WARNING] [ViewControl] SetViewPoint() failed because window height and width are not set.
+scene0060_00: Seed: 55, Selected_ID: 22, accepted after 0 times, dx, dy=(0.0, 0.0), eric_10_35
+scene0067_00: Seed: 55, Selected_ID: 4, accepted after 0 times, dx, dy=(0.0, 0.0), eric_30_16
+scene0067_01: Seed: 55, Selected_ID: 4, accepted after 0 times, dx, dy=(0.0, 0.0), eric_-5_51
+scene0068_00: Seed: 55, Selected_ID: 37, accepted after 1404 times, dx, dy=(-0.08036189640884399, 0.025704377739262863), eric_25_79
+scene0072_01: Seed: 55, Selected_ID: 16, accepted after 6573 times, dx, dy=(0.05674292994918823, -0.7721751255270536), eric_15_29
+NO SUIT ERIC! Using default
+scene0075_00: Seed: 55, Selected_ID: 17, accepted after 10000 times, dx, dy=(-0.29727758116265346, -0.1821517966595173), eric_0_34
+[Open3D WARNING] [ViewControl] SetViewPoint() failed because window height and width are not set.
+scene0078_00: Seed: 55, Selected_ID: 8, accepted after 4010 times, dx, dy=(-0.4571337148238463, -0.01803234791671155), eric_30_52
+scene0078_02: Seed: 55, Selected_ID: 13, accepted after 3460 times, dx, dy=(0.06021798731784599, -0.21618122818631139), eric_5_54
+failed
+scene0084_02: Seed: 55, Selected_ID: 13, accepted after 6275 times, dx, dy=(0.3858979404978282, 0.5804740202260203), eric_25_21
+scene0085_00: Seed: 55, Selected_ID: 16, accepted after 2265 times, dx, dy=(-0.07093535962080358, -0.361156577499493), eric_25_98
+scene0087_01: Seed: 55, Selected_ID: 7, accepted after 640 times, dx, dy=(0.09199753343798096, -0.07747601543166427), eric_30_98
+scene0088_03: Seed: 55, Selected_ID: 12, accepted after 4200 times, dx, dy=(0.3602088946964942, -0.7037897814998965), eric_25_12
+scene0089_00: Seed: 55, Selected_ID: 20, accepted after 4820 times, dx, dy=(-0.013740129881396057, 0.450854418463102), eric_0_81
+scene0092_00: Seed: 55, Selected_ID: 12, accepted after 2978 times, dx, dy=(-0.09639263546730907, -0.6982744191339806), eric_10_8
+scene0096_01: Seed: 55, Selected_ID: 23, accepted after 3871 times, dx, dy=(0.46221916339026614, -0.2519690438060943), eric_0_78
+scene0097_00: Seed: 55, Selected_ID: 21, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_40
+scene0100_00: Seed: 55, Selected_ID: 3, accepted after 2264 times, dx, dy=(-0.07519896048452916, -0.060440290427589416), eric_25_65
+scene0101_05: Seed: 55, Selected_ID: 8, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_84
+scene0103_00: Seed: 55, Selected_ID: 15, accepted after 8246 times, dx, dy=(0.007386379884962519, 0.3664538247539009), eric_25_69
+scene0109_00: Seed: 55, Selected_ID: 12, accepted after 0 times, dx, dy=(0.0, 0.0), eric_20_72
+scene0110_00: Seed: 55, Selected_ID: 26, accepted after 0 times, dx, dy=(0.0, 0.0), eric_25_5
+scene0110_01: Seed: 55, Selected_ID: 22, accepted after 0 times, dx, dy=(0.0, 0.0), eric_20_26
+scene0112_01: Seed: 55, Selected_ID: 5, accepted after 5141 times, dx, dy=(-0.021389981765341758, 0.4497225867134276), eric_30_76
+scene0112_02: Seed: 55, Selected_ID: 9, accepted after 0 times, dx, dy=(0.0, 0.0), eric_20_45
+[Open3D WARNING] [ViewControl] SetViewPoint() failed because window height and width are not set.
+scene0113_00: Seed: 55, Selected_ID: 4, accepted after 2751 times, dx, dy=(0.5412136115635686, 0.43930411100728994), eric_25_10
+failed
+scene0116_02: Seed: 55, Selected_ID: 3, accepted after 4956 times, dx, dy=(0.1415931777657939, 0.623948118033378), eric_30_82
+scene0118_01: Seed: 55, Selected_ID: 7, accepted after 0 times, dx, dy=(0.0, 0.0), eric_30_42
+scene0120_00: Seed: 55, Selected_ID: 7, accepted after 2891 times, dx, dy=(-0.05792386670787335, 0.472788985910585), eric_25_71
+NO SUIT ERIC! Using default
+scene0122_00: Seed: 55, Selected_ID: 3, accepted after 10000 times, dx, dy=(-0.17893516485867797, -0.2686407219633711), eric_0_48
+failed
+failed
+scene0127_00: Seed: 55, Selected_ID: 21, accepted after 0 times, dx, dy=(0.0, 0.0), eric_5_7
+scene0127_01: Seed: 55, Selected_ID: 17, accepted after 0 times, dx, dy=(0.0, 0.0), eric_25_57
+scene0129_00: Seed: 55, Selected_ID: 7, accepted after 0 times, dx, dy=(0.0, 0.0), eric_20_88
+scene0133_00: Seed: 55, Selected_ID: 6, accepted after 1713 times, dx, dy=(0.16910357908302107, -0.4092411436603974), eric_20_42
+scene0140_01: Seed: 55, Selected_ID: 14, accepted after 6930 times, dx, dy=(-0.6715780731916575, 2.105982479011403), eric_30_85
+scene0145_00: Seed: 55, Selected_ID: 3, accepted after 799 times, dx, dy=(0.22483763536150292, 0.12715216059501253), eric_20_94
+scene0148_00: Seed: 55, Selected_ID: 6, accepted after 5519 times, dx, dy=(0.6698291167734941, -0.42294399691428197), eric_25_35
+scene0149_00: Seed: 55, Selected_ID: 25, accepted after 7238 times, dx, dy=(-0.3751013176696064, -0.8523124321235315), eric_5_63
+scene0152_00: Seed: 55, Selected_ID: 29, accepted after 0 times, dx, dy=(0.0, 0.0), eric_15_82
+scene0153_01: Seed: 55, Selected_ID: 17, accepted after 0 times, dx, dy=(0.0, 0.0), eric_0_99
+scene0155_01: Seed: 55, Selected_ID: 13, accepted after 0 times, dx, dy=(0.0, 0.0), eric_20_59
+scene0157_00: Seed: 55, Selected_ID: 18, accepted after 3460 times, dx, dy=(0.03794983039831153, -0.0847539709781781), eric_30_72
+NO SUIT ERIC! Using default
+scene0157_01: Seed: 55, Selected_ID: 6, accepted after 10000 times, dx, dy=(0.18357003308767486, 0.012454844784235202), eric_0_98
+failed
+failed
+scene0165_00: Seed: 55, Selected_ID: 1, accepted after 608 times, dx, dy=(0.09502473762085337, 0.10767400016665796), eric_10_25
+scene0166_02: Seed: 55, Selected_ID: 26, accepted after 2566 times, dx, dy=(0.03553900223241122, -0.2642183113686854), eric_-5_56
+scene0168_01: Seed: 55, Selected_ID: 21, accepted after 6952 times, dx, dy=(-0.8855764625057828, 0.4724826259708969), eric_-5_88
+NO SUIT ERIC! Using default
+scene0170_00: Seed: 55, Selected_ID: 12, accepted after 10000 times, dx, dy=(0.22050041842460633, -0.6591070228876931), eric_0_56
+scene0171_01: Seed: 55, Selected_ID: 15, accepted after 1330 times, dx, dy=(-0.238007302420177, -0.4613692833232211), eric_0_13
+scene0179_00: Seed: 55, Selected_ID: 11, accepted after 7515 times, dx, dy=(-0.49131514724024394, 1.0891546749393968), eric_10_89
+scene0181_00: Seed: 55, Selected_ID: 33, accepted after 0 times, dx, dy=(0.0, 0.0), eric_5_65
+scene0181_02: Seed: 55, Selected_ID: 16, accepted after 409 times, dx, dy=(0.05738220925633897, -0.072799264216271), eric_10_77
+failed
+scene0197_00: Seed: 55, Selected_ID: 20, accepted after 0 times, dx, dy=(0.0, 0.0), eric_25_92
+scene0200_01: Seed: 55, Selected_ID: 5, accepted after 3986 times, dx, dy=(-0.11076485293077754, -0.3986005741045432), eric_30_76

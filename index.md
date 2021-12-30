@@ -2,10 +2,11 @@
 
 > PointIt3D: A Benchmark Dataset and Baseline for Pointed Object Detection Task 
 > Chunru Lin*, Hongxin Zhang*, Haotian Zheng*
+>
 > *Shanghai Jiao Tong University
 
-![img](https://xhrlyb.github.io/PointIt3D/images/img1.png)
-![img](https://xhrlyb.github.io/PointIt3D/images/img2.png)
+![img](https://xhrlyb.github.io/PointIt3D/images/1.a.png)
+![img](https://xhrlyb.github.io/PointIt3D/images/1.b.png)
 
 ### Abstract
 

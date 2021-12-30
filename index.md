@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+## PointIt3D: A Benchmark Dataset and Baseline for Pointed Object Detection Task [[Project Page]](https://xhrlyb.github.io/PointIt3D/) [[Paper]](https://xhrlyb.github.io/PointIt3D/paper.pdf)
 
-You can use the [editor on GitHub](https://github.com/XHRlyb/PointIt3D/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+> PointIt3D: A Benchmark Dataset and Baseline for Pointed Object Detection Task 
+> Chunru Lin*, Hongxin Zhang*, Haotian Zheng*
+> *Shanghai Jiao Tong University
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![img](https://xhrlyb.github.io/PointIt3D/images/img1.png)
+![img](https://xhrlyb.github.io/PointIt3D/images/img2.png)
 
-### Markdown
+### Abstract
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Pointed object detection is of great importance for human-machine interaction, but attempts to solve this task may run into the difficulties of lack of available large scale datasets since people hardly record 3D scenes with a human pointing at specific objects. In efforts to mitigate this gap, we cultivate the first benchmark dataset for this task: PointIt3D, containing 347 scans now and can be easily scaled up to facilitate future utilizations, which is automatically constructed from existing 3D scenes from ScanNet[1] and 3D people models using our novel synthetic algorithm that achieves a high acceptable rate of more than 85% according to three experts’ assessments, which hopefully would pave the way for further studies. We also provide a simple yet effective baseline based on anomaly detection and majority voting pointline generation to solve this task based on our dataset, which achieves accuracy of 55.33%, leaving much room for further improvements. Code will be released at https://github.com/XHRlyb/PointIt3D.
 
-```markdown
-Syntax highlighted code block
+### Video
 
-# Header 1
-## Header 2
-### Header 3
+### Code and Dataset
 
-- Bulleted
-- List
+We provide source codes and related data of the project on [Our Github Page](https://github.com/XHRlyb/PointIt3D/)
 
-1. Numbered
-2. List
+### Citation
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/XHRlyb/PointIt3D/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+@article{SIRS
+    author = {Chunru Lin, Hongxin Zhang, Haotian Zheng},
+    title = {PointIt3D: A Benchmark Dataset and Baseline for Pointed Object Detection Task},
+    year = {2021},
+    howpublished={\url{https://xhrlyb.github.io/PointIt3D/}}
+}
+```

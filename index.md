@@ -1,4 +1,4 @@
-## PointIt3D: A Benchmark Dataset and Baseline for Pointed Object Detection Task [[Project Page]](https://xhrlyb.github.io/PointIt3D/) [[Paper]](https://xhrlyb.github.io/PointIt3D/paper.pdf)
+## PointIt3D: A Benchmark Dataset and Baseline for Pointed Object Detection Task
 
 > PointIt3D: A Benchmark Dataset and Baseline for Pointed Object Detection Task 
 > Chunru Lin*, Hongxin Zhang*, Haotian Zheng*
@@ -21,10 +21,10 @@ We provide source codes and related data of the project on [Our Github Page](htt
 ### Citation
 
 ```
-@article{SIRS
+@article{Pointed3D
     author = {Chunru Lin, Hongxin Zhang, Haotian Zheng},
     title = {PointIt3D: A Benchmark Dataset and Baseline for Pointed Object Detection Task},
     year = {2021},
-    howpublished={\url{https://xhrlyb.github.io/PointIt3D/}}
+    howpublished={https://xhrlyb.github.io/PointIt3D/}
 }
 ```

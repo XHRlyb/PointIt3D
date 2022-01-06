@@ -31,7 +31,7 @@ Our PointIt3D dataset is available at [BaiduPan](https://pan.baidu.com/share/ini
 ### Citation
 
 ```
-@article{Pointed3D
+@article{PointIt3D
     author = {Chunru Lin, Hongxin Zhang, Haotian Zheng},
     title = {PointIt3D: A Benchmark Dataset and Baseline for Pointed Object Detection Task},
     year = {2021},
